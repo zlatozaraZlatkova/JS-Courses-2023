@@ -1,0 +1,31 @@
+function solve(availableStock, deliveredStock) {
+  let storeObj = {};
+
+  for (let i = 0; i < availableStock.length; i += 2) {
+    let product = availableStock[i]; // index[i] = Chips
+    let quality = Number(availableStock[i + 1]); // index + 1
+
+    storeObj[product] = quality;
+  }
+
+  for (let j = 0; j < deliveredStock.length; j += 2) {
+    let deliveredProduct = deliveredStock[j];
+    let deliveredQuantity = Number(deliveredStock[j + 1]);
+
+    if (storeObj.hasOwnProperty(deliveredProduct) === false) {
+      storeObj[deliveredProduct] = 0;
+    }
+
+    if (storeObj.hasOwnProperty(deliveredProduct) === true) {
+      storeObj[deliveredProduct] += deliveredQuantity;
+    }
+  }
+
+  for (let key of Object.keys(storeObj)) {
+    console.log(`${key} -> ${storeObj[key]}`);
+  }
+}
+solve(
+  ["Chips", "5", "CocaCola", "9", "Bananas", "14", "Pasta", "4", "Beer", "2"],
+  ["Flour", "44", "Oil", "12", "Pasta", "7", "Tomatoes", "70", "Bananas", "30"]
+);
