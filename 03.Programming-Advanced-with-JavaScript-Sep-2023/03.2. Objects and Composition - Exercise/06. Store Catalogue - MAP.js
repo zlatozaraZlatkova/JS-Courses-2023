@@ -1,27 +1,34 @@
 function getstoreCatalogue(arr) {
-  let collection = new Map();
+  const catalogue = new Map();
 
-  for (let line of arr) {
-    let [product, price] = line.split(" : ");
-    price = Number(price);
-    if (!collection.get(product)) {
-      collection.set(product, price);
+  let currentLetter;
+
+  arr.forEach((el) => {
+    let [product, price] = el.split(" : ");
+    if (!catalogue.has(product)) {
+      catalogue.set(product, price);
+    }
+    catalogue.get(product, price);
+  });
+
+  let sortProducts = Array.from(catalogue.entries()).sort((a, b) =>
+    a[0].localeCompare(b[0])
+  );
+
+  for (let [product, price] of sortProducts) {
+    getFirstLetter(product);
+    if (currentLetter === product[0]) {
+      console.log(`  ${product}: ${price}`);
     }
   }
 
-  let sortEntries = Array.from(collection.entries());
-  sortEntries.sort((keyA, keyB) => keyA[0].localeCompare(keyB[0]));
-
-  let listOfProducts = [];
-
-  for (let [key, value] of sortEntries) {
-    let firstLetter = key[0];
-    if (!listOfProducts.includes(firstLetter)) {
-      listOfProducts.push(firstLetter);
+  function getFirstLetter(item) {
+    if (item[0] !== currentLetter) {
+      currentLetter = item[0];
+      console.log(currentLetter);
+      return currentLetter;
     }
-    listOfProducts.push(` ${key}: ${value}`);
   }
-  console.log(listOfProducts.join("\n"));
 }
 getstoreCatalogue([
   "Appricot : 20.4",
