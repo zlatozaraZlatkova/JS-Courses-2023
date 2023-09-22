@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap");
+
+:root {
+  --main-color: hsl(0, 0%, 8%);
+  --main-bg-color: hsl(0, 0%, 40%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: var(--main-color);
+  line-height: 1.5;
+  text-size-adjust: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px;
+
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 20px;
+  border-left: 3px solid var(--main-bg-color);
+  padding: 10px;
+  margin: 10px;
+
+}
+
+.block-right {
+  flex-grow: 3;
+}
+
+.block-left {
+  flex-grow: 1;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 40px;
+  letter-spacing: 7px;
+  margin: 10px 0;
+}
+
+p {
+  color: var(--main-bg-color);
+}
+
+.article-text,
+.article-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 320px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 15px;
+}
+
+
+.article-media {
+  background-image: url("/Requirements-and-Resources/Images/01.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+}
+
+
+@media (max-width: 935px) {
+
+  .container {
+    flex-wrap: wrap;
+    justify-content: start;
+
+  }
+
+  .container h2 {
+    font-size: 32px;
+
+  }
+
+  .container p {
+    font-size: 14px;
+  }
+
+  .article-text {
+    text-align: start;
+    min-width: 280px;
+    height: auto;
+  }
+}
