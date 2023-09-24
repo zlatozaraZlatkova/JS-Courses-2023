@@ -82,7 +82,11 @@ p {
   width: 320px;
   height: 200px;
   padding: 10px;
+<<<<<<< HEAD
 /*   margin: 10px; */
+=======
+  /* margin: 10px; */
+>>>>>>> de8f604 (first commit)
   font-size: 15px;
 }
 
