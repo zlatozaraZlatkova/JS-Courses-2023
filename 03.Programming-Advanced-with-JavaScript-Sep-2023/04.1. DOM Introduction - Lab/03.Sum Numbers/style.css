@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  color: rgb(44, 43, 43);
+  margin: 50px;
+
+}
+
+h1 {
+  padding-bottom: 20px;
+}
+
+input,
+button {
+  padding: 7px 10px;
+  border-radius: 5px;
+
+}
+
+button {
+  background-color: rgb(149, 196, 55);
+  border: 1px solid rgb(149, 196, 55);
+  font-size: 14px;
+
+}
+
+button:hover {
+  font-weight: 400;
+  background-color: rgba(121, 7, 102, 0.623);
+  border: 1px solid rgba(121, 7, 102, 0.623);
+  color: white;
+  cursor: pointer;
+}
