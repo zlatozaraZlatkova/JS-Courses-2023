@@ -5,7 +5,7 @@
 
 ## Course Info
 
-During the JS Applications course, students learn what HTTP Requests are and how to use them. They will acquire knowledge of REST Services, understand Baas (backend as a service) and its usage, comprehend the concept of asynchronous code (such as promises, async, or await), and comprehend the concepts of templating and routing. Students will understand the architecture of an application and how to properly structure it.  By the end of the course, they will have explored different design patterns and their practical guidelines, created their own web components, used the Web Components standard, and built a Webpack environment from scratch.
+During the JS Applications course, students learn what HTTP Requests are and how to use them. They will acquire knowledge of REST Services, understand Baas (backend as a service) and its usage, comprehend the concept of asynchronous code (such as promises, async, or await), and comprehend the concepts of templating and routing. Students will understand the architecture of an application and how to properly structure it.  By the end of the course, they will have explored different design patterns and their practical guidelines, created their web components, used the Web Components standard, and built a Webpack environment from scratch.
 The course required creating a single-page application using the techniques learned from previous lectures. They will be assessed on this application.
 
 ## Skills
@@ -73,7 +73,7 @@ The Programming Basics course provides the necessary beginning programming skill
     </tr>
   <tr>
      <td>JavaScript Applications</td>
-     <td><strong>$${\color{blue}Ongoing}$$</strong></td>
+     <td><a href="https://softuni.bg/certificates/details/198127/d0656ae6"><strong>See certificate</strong></a></td>
   </tr>
     <td>JavaScript Advanced</td>
    <td><a href="https://softuni.bg/certificates/details/188228/e928dea1"><strong>See certificate</strong></a></td>
