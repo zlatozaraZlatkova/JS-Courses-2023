@@ -184,7 +184,7 @@ URL: /data/cars?where=model%20LIKE%20%22${query}%22
 
 Where {query} is the search query that the user has entered in the input field. Required headers are described in the documentation. The service will return an array of cars.
 
-4\. Appendix A: Using the Local REST Service
+### 4\. Appendix A: Using the Local REST Service
 
 ### Starting the Service
 
@@ -224,7 +224,7 @@ Content-Type: application/json
 {JSON-encoded error message}
 
 More Information
-You can find more details on the GitHub repository of the service.
+You can find more details on the [GitHub repository of the service](https://github.com/softuni-practice-server/softuni-practice-server/blob/master/README.md)
 
 ### 5\. Appendix B: Running the Test Suite
 
