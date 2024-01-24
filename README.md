@@ -1,11 +1,25 @@
+# <p align="center"># SoftUni | JS-Courses-2023-2024<p>
 
-# <p align="center"># SoftUni | JS-Courses-2023<p>
+# JS Back-End
+
+## Course Info
+
+The intensive course aims to teach how to develop server-side JavaScript applications on the Node.js platform using Express.js as a framework. It covers building a server with Node.js, the server-client relationship, and creating fast data-driven web applications with Node.js, Express.js, and MongoDB, using the latest concepts and tools. The course will also cover the MongoDB database, which is a popular non-relational database, and the Mongoose library for data retrieval. Additionally, a complete REST API will be built using Express.js and MongoDB towards the end of the course.
+
+## Skills
+
+- Creating an MVC architecture
+- Application development with Express and Handlebars,
+- Non-relational databases
+- Working with server applications with Node.js
+- Working with the HTTP protocol
+- Using a Web Server
 
 # JS Applications
 
 ## Course Info
 
-During the JS Applications course, students learn what HTTP Requests are and how to use them. They will acquire knowledge of REST Services, understand Baas (backend as a service) and its usage, comprehend the concept of asynchronous code (such as promises, async, or await), and comprehend the concepts of templating and routing. Students will understand the architecture of an application and how to properly structure it.  By the end of the course, they will have explored different design patterns and their practical guidelines, created their web components, used the Web Components standard, and built a Webpack environment from scratch.
+During the JS Applications course, students learn what HTTP Requests are and how to use them. They will acquire knowledge of REST Services, understand Baas (backend as a service) and its usage, comprehend the concept of asynchronous code (such as promises, async, or await), and comprehend the concepts of templating and routing. Students will understand the architecture of an application and how to properly structure it. By the end of the course, they will have explored different design patterns and their practical guidelines, created their web components, used the Web Components standard, and built a Webpack environment from scratch.
 The course required creating a single-page application using the techniques learned from previous lectures. They will be assessed on this application.
 
 ## Skills
@@ -17,7 +31,7 @@ The course required creating a single-page application using the techniques lear
 - Working with REST APIs and asynchronous programming
 - Testing the application
 
-# Programming Advanced with JavaScript 
+# Programming Advanced with JavaScript
 
 ## Course Info
 
@@ -32,7 +46,7 @@ In the 'JS Advanced' course, students get in-depth knowledge of the JavaScript l
 - Object-oriented programming
 - Functional programming
 
-# Programming Fundamentals with JavaScript 
+# Programming Fundamentals with JavaScript
 
 ## Course Info
 
@@ -49,11 +63,11 @@ Additional technologies that are essential for every software developer are thor
 - Basic HTML and CSS skills
 - Working with linear data structures
 
-# Programming Basics with JavaScript 
+# Programming Basics with JavaScript
 
 ## Course Info
 
-The Programming Basics course provides the necessary beginning programming skills for all technology majors at Software University. 
+The Programming Basics course provides the necessary beginning programming skills for all technology majors at Software University.
 
 ## Skills
 
@@ -65,12 +79,17 @@ The Programming Basics course provides the necessary beginning programming skill
 - Working with more complex loops (nested for loops and while loops)
 
 ## Courses and Certificates
+
 <div>
 <table>
   <tr>
     <th>Course</th>
     <th>Certificate</th>
     </tr>
+   <tr>
+     <td>JavaScript Back-End</td>
+     <td><strong>$${\color{blue}Ongoing}$$</strong></td>
+  </tr>  
   <tr>
      <td>JavaScript Applications</td>
      <td><a href="https://softuni.bg/certificates/details/198127/d0656ae6"><strong>See certificate</strong></a></td>
