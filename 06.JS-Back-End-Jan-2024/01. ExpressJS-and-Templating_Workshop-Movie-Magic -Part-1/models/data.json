@@ -1,0 +1,62 @@
+[
+  {
+    "id": "asdf9876",
+    "title": "Jungle Cruise",
+    "genre": "Adventure",
+    "director": "Jaume Collet-Serra",
+    "year": 2021,
+    "imageURL": "../static/img/jungle-cruise.jpeg",
+    "rating": 1,
+    "description": "Dreaming about saving countless lives and having another adventure, the feisty English feminist and doctor of botany, Dr Lily Houston, embarks on a peril-laden mission to change the world. Along with her fashionable brother, MacGregory, Dr Houston enlists the help of the arrogant, wisecracking riverboat skipper, Captain Frank Wolff, to guide them through the serpentine Amazon River in La Qualia, his swift wooden boat. Now, as the intrepid trio ventures deeper and deeper into the heart of an impenetrable green maze, searching for something that cannot be found, a centuries-old curse and the ruthless aristocrat, Prince Joachim, threaten to put an end to their ambitious plans."
+  },
+  {
+    "id": "asdf1212",
+    "title": "The Little Mermaid",
+    "genre": "Fantasy",
+    "director": "Rob Marshall",
+    "year": 2021,
+    "imageURL": "../static/img/the-little-mermaid.jpg",
+    "rating": 2,
+    "description": "The youngest of King Triton's daughters, Ariel is a beautiful and spirited young mermaid with a thirst for adventure. Longing to find out more about the world beyond the sea, Ariel visits the surface and falls for the dashing Prince Eric. Following her heart, she makes a deal with the evil sea witch, Ursula, to experience life on land."
+  },
+  {
+    "id": "asdf4321",
+    "title": "Pirates of the Caribbean: On Stranger Tides",
+    "genre": "Adventure",
+    "director": "Rob Marshall",
+    "year": 2011,
+    "imageURL": "https://upload.wikimedia.org/wikipedia/en/5/5e/Pirates_of_the_Caribbean_-_On_Stranger_Tides.png",
+    "rating": 3,
+    "description": "Captain Jack Sparrow sets sail in search of the fountain of youth. On his way, he meets a mysterious woman from his past. In order to accomplish his mission, he has to face his old enemy, Blackbeard."
+  },
+  {
+    "id": "asdf6918",
+    "title": "The Marvels",
+    "genre": "Adventure",
+    "director": "Walt Disney Studios Motion Pictures",
+    "year": 2023,
+    "imageURL": "https://lumiere-a.akamaihd.net/v1/images/56245l11a_goat_philippines_apac_poster_1sht_e357e03a.jpeg",
+    "rating": 4,
+    "description": "Carol Danvers, aka Captain Marvel, has reclaimed her identity from the tyrannical Kree and taken revenge on the Supreme Intelligence. However, unintended consequences see her shouldering the burden of a destabilized universe. When her duties send her to an anomalous wormhole linked to a Kree revolutionary, her powers become entangled with two other superheroes to form the Marvels."
+  },
+  {
+    "id": "asdf9540",
+    "title": "Guardians of the Galaxy",
+    "genre": "Fantasy",
+    "director": "James Gunn",
+    "year": 2023,
+    "imageURL": "https://mediaproxy.tvtropes.org/width/1000/https://static.tvtropes.org/pmwiki/pub/images/img_3124_73.jpeg",
+    "rating": 5,
+    "description": "A bunch of skilled criminals led by brash adventurer Peter Quill join hands to fight a villain named Ronan the Accuser who wants to control the universe with the help of a mystical orb."
+  },
+  {
+    "id": "asdf9909",
+    "title": "Wonder Women",
+    "genre": "Fantasy",
+    "director": "Patty Jenkins",
+    "year": 2023,
+    "imageURL": "https://imageio.forbes.com/blogs-images/markhughes/files/2017/05/Wonder-Woman-3.jpg?format=jpg&width=1440",
+    "rating": 4,
+    "description": "Princess Diana of an all-female Amazonian race rescues US pilot Steve. Upon learning of a war, she ventures into the world of men to stop Ares, the god of war, from destroying mankind."
+  }
+]
