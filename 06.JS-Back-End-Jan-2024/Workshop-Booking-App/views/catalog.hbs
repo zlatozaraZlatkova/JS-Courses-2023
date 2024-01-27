@@ -1,0 +1,36 @@
+<section id="catalog-section" class="spaced">
+  <h1 class="item">All Accommodation</h1>
+  
+  <main class="item pad-large align-center">
+        <form class="layout large" method="get">
+            <div class="content pad-med align-center aligned">
+                <label><span>Location</span><input name="city" placeholder="Tyrol..."></label>
+                <label><span>Terms</span><input name="search" placeholder="Dream holiday..."></label>
+            </div>
+            <div class="content pad-med align-center aligned">
+                <label><span>From price</span><input type="number" name="fromPrice"  placeholder="50..."></label>
+                <label><span>To price</span><input type="number" name="toPrice" placeholder="250..."></label>
+            </div>
+            <input class="action" type="submit" value="Search">
+        </form>
+    </main>
+
+  {{#if rooms}}
+
+  <ul class="catalog cards">
+    {{#each rooms}}
+    {{>roomCard}}
+    {{/each}}
+  </ul>
+
+  {{else}}
+
+  <main class="item pad-large align-center">
+    <p>Nothing has been listed yet. Be the first!</p>
+    <div>
+      <a class="action" href="/create">Host Accommodation</a>
+    </div>
+  </main>
+
+  {{/if}}
+</section>

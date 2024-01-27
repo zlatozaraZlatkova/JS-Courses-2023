@@ -1,0 +1,22 @@
+const router = require("express").Router();
+const { create } = require("../services/accommodationService");
+
+router.get("/", (req, res) => {
+  res.render("create", {
+    title: "Host New Accommodation",
+  });
+});
+
+router.post("/", async (req, res) => {
+  try {
+    const result = await create(req.body);
+    res.redirect("/catalog/" + result.id);
+  } catch (err) {
+    res.render("create", {
+      title: "Request Error",
+      error: err.message.split("\n"),
+    });
+  }
+});
+
+module.exports = router;

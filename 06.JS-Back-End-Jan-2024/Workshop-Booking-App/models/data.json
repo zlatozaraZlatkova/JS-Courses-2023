@@ -1,0 +1,20 @@
+[
+  {
+    "id": "09fq61",
+    "name": "Luisls Hof",
+    "description": "Do you love the alpine lifestyle on the mountain combined with outdoor experiences, carefree independence and harmonious peace? Then treat yourself to a dream holiday in a chalet at 1,340 meters above sea level near the beautiful village of Berwang in the Austrian state of Tyrol. The two chalets for different numbers of people impress with comfortable luxury and an unbeatable price-performance ratio.",
+    "city": "Tyrol",
+    "beds": 2,
+    "price": 130,
+    "imgUrl": "/static/assets/room1.jpg"
+  },
+  {
+    "id": "029ee4",
+    "name": "Sonnberg",
+    "description": "Our chalets offer you everything you need for an unforgettable stay: modern facilities, cozy atmosphere and a view that you will fall in love with at first sight. Surrounded by gentle nature and the scent of the forest, you live in our holiday homes, which are built from sustainable moon phase wood and have a relaxing effect on the psyche.",
+    "city": "Carinthia",
+    "beds": 2,
+    "price": 150,
+    "imgUrl": "/static/assets/room2.jpg"
+  }
+]

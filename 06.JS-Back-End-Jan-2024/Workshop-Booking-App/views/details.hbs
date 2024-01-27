@@ -1,0 +1,33 @@
+<section id="catalog-section">
+  {{#with room}}
+  <h1 class="item">{{name}}</h1>
+  <div class="item padded">
+    <main class="layout right large">
+      <div class="col">
+        <img src="{{imgUrl}}" class="img-large" />
+      </div>
+
+      <div class="content pad-med">
+        <p>Location: <strong>{{city}}</strong></p>
+        <p>{{description}}</p>
+        <div class="align-left">
+          <div>Maximum {{beds}} people
+          </div>
+          <br>
+          <div>Price per night:<strong> {{price}}€</strong>
+          </div>
+        </div>
+        <div>
+          <br>
+        </div>
+      
+          <a class="action" href="/delete/{{id}}">Delete</a>
+        
+
+      </div>
+    </main>
+
+    <footer>Listed by (TODO add owner)</footer>
+  </div>
+  {{/with}}
+</section>
