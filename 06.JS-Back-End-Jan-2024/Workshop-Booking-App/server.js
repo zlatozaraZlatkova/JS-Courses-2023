@@ -1,31 +1,24 @@
 const express = require("express");
+const expressConfig = require("./config/express");
+const routesConfig = require("./config/routes");
+const databaseConfig = require("./config/database");
 const PORT = 3000;
 
-const app = express();
+start();
 
-const handlebars = require("express-handlebars");
-const hbs = handlebars.create({ extname: ".hbs" });
+async function start() {
+  const app = express();
+  
+  await databaseConfig(app);
 
-app.engine(".hbs", hbs.engine);
-app.set("view engine", ".hbs");
+  expressConfig(app);
+  routesConfig(app);
+  
 
-app.use(express.urlencoded({ extended: false }));
-app.use("/static", express.static("static"));
+  app.listen(PORT, () => console.log(`Server listening on port: ${PORT}...`));
+}
 
-const homeController = require("./controllers/homeController");
-const catalogController = require("./controllers/catalogController");
-const createController = require("./controllers/createController");
-const defaultController = require("./controllers/defaultController");
-const defaultTitle = require("./middlewares/defaultTitle");
-const deleteController = require("./controllers/deleteController");
 
-app.use(defaultTitle("Chalets & Huts"));
 
-app.use("/", homeController);
-app.use("/catalog", catalogController);
-app.use("/create", createController);
-app.use("/delete", deleteController);
 
-app.use(defaultController);
 
-app.listen(PORT, () => console.log(`Server listening on port: ${PORT}...`));
