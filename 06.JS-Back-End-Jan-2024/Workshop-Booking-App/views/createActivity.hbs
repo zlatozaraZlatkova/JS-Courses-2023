@@ -1,0 +1,33 @@
+<section id="create-activities-section" class="">
+
+  <h1 class="item">Outdoor Activities</h1>
+
+  <main class="item padded align-center">
+
+    <form method="post" action="/activity/create" class="layout large aligned">
+        {{!-- {{#if error}}
+      <div class="error-box">
+        {{#each error}}
+        <p>{{this}}</p>
+        {{/each}}
+
+      </div>
+       {{/if}} --}}
+
+      <div class="col aligned pad-med align-center">
+        <label><span>Label:</span>
+          <input  type="text" id="name" name="label"/></label>
+        <label><span>Icon URL:</span>
+          <input type="text" id="city" name="iconUrl" /></label>
+      </div>
+
+     
+        <div class="pad-med align-center">
+          <input class="action" type="submit" value="Publish Item">
+        </div>
+     
+
+    </form>
+  </main>
+
+</section>

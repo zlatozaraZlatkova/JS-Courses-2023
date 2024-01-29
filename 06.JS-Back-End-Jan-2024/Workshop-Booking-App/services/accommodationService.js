@@ -34,11 +34,18 @@ async function create(roomData) {
   return result;
 }
 
+// async function deleteById(id) {
+//   const matchIndex = data.findIndex((r) => r.id == id);
+//   console.log(matchIndex);
+
+//   data.splice(matchIndex, 1);
+//   await persist();
+// }
 
 
 module.exports = {
   getAll,
   getById,
   create,
- 
+  // deleteById,
 };

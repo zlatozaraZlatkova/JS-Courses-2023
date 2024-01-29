@@ -1,4 +1,7 @@
 /* Content positioning */
+.pad-top {
+  padding-top: 20px;
+}
 
 .pad-large {
   padding: 32px;

@@ -48,8 +48,15 @@ footer {
     color: white;
 }
 
-.action:hover {
+.action:hover,
+.action-del:hover {
     background-color: hsl(var(--secondary-color), var(--secondary-s), var(--secondary-l));
     cursor: pointer;
+    color: white;
+}
+
+.action-del {
+    /* background-color: rgb(216, 131, 20); */
+    background-color: #953253;
     color: white;
 }

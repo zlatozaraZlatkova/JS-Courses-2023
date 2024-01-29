@@ -65,13 +65,16 @@ p {
 
 /* Action items */
 
-.action {
+.action,
+ .action-del {
   display: inline-block;
   border: none;
   padding: 8px 16px;
   margin: 4px 8px;
   text-decoration: none;
 }
+
+
 
 .cta {
   display: block;
@@ -80,7 +83,7 @@ p {
   width: 200px;
 }
 
-.facility-icon {
+.activity-icon {
   width: 24px;
   height: 24px;
 }
