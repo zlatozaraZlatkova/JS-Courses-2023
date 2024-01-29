@@ -11,19 +11,27 @@
         <p>Location: <strong>{{city}}</strong></p>
         <p>{{description}}</p>
         <div class="align-left">
-          <div>Maximum {{beds}} people
+          <div class="pad-top">Maximum
+            {{beds}}
+            people
           </div>
-          <br>
-          <div>Price per night:<strong> {{price}}€</strong>
+          <div class="pad-top">Price per night:<strong> {{price}}€</strong>
           </div>
+          <ul class="catalog pad-top">
+            {{#each activities}}
+            <li>{{label}}
+              <img class="activity-icon" src="{{iconUrl}}" />
+            </li>
+            {{/each}}
+          </ul>
           <div class="pad-top">
-            <a class="action" href="/activity/{{_id}}/extras">Select Activities</a>
+            <a class="action" href="/activity/{{_id}}/extras">Select
+              Activities</a>
             <a class="action-del" href="/delete/{{_id}}">Delete</a>
           </div>
-
         </div>
         <div>
-          <br>
+          <br />
         </div>
 
       </div>

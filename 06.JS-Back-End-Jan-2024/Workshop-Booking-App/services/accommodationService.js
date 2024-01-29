@@ -6,7 +6,7 @@ async function getAll(search, city, fromPrice, toPrice) {
 }
 
 async function getById(id) {
-  return await Chalet.findById(id).lean();
+  return await Chalet.findById(id).populate("activities", "label iconUrl").lean();
 }
 
 async function create(roomData) {
