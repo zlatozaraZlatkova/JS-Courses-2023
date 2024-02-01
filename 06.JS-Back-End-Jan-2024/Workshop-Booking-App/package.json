@@ -1,7 +1,6 @@
 {
   "name": "workshop-airbnb",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
@@ -10,11 +9,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cookie-parser": "^1.4.6",
     "express": "^4.18.2",
     "express-handlebars": "^7.1.2",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.1.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.3"
-  }
+  },
+  "description": ""
 }

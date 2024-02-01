@@ -51,7 +51,7 @@ router.get("/:roomId/extras", async (req, res) => {
 router.post("/:roomId/extras", async (req, res) => {
   await addActivities(req.params.roomId, Object.keys(req.body));
 
-  res.redirect("/activity/" + req.params.roomId + "/extras");
+  res.redirect("/catalog/" + req.params.roomId);
 });
 
 module.exports = router;

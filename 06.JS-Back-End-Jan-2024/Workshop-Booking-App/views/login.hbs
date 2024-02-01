@@ -1,0 +1,33 @@
+<section id="login-section" class="">
+
+  <h1 class="item">Sing In</h1>
+
+  <main class="item padded align-center">
+
+    <form method="post" action="/auth/login" class="layout left large">
+
+      {{#if error}}
+      <div class="error-box">
+        {{#each error}}
+        <p>{{this}}</p>
+        {{/each}}
+
+      </div>
+       {{/if}}
+
+      <div class="aligned pad-top">
+        <label><span>Username:</span>
+          <input type="text" id="username" name="username" /></label>
+        <label><span>Password:</span>
+          <input type="password" id="password" name="password" /></label>
+      </div>
+
+        <div class="cta pad-med">
+          <input class="cta action" type="submit" value="Sing In">
+        </div>
+      </div>
+
+    </form>
+  </main>
+
+</section>

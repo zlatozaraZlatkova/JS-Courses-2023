@@ -1,8 +1,7 @@
 const mongoose = require("mongoose");
 
-const connStr =
-  process.env.DATABASE_CONNECTION_STRING ||
-  "mongodb://localhost:27017/booking-app";
+//production environment: set defaults in .env 
+const connStr = process.env.DATABASE_CONNECTION_STRING || "mongodb://localhost:27017/booking-app";
 
 module.exports = async (app) => {
   try {
