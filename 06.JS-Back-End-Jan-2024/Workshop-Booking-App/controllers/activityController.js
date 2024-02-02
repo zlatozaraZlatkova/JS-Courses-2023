@@ -1,9 +1,5 @@
 const { getById } = require("../services/accommodationService");
-const {
-  getAllActivities,
-  createActivity,
-  addActivities,
-} = require("../services/activityService.js");
+const { getAllActivities, createActivity, addActivities } = require("../services/activityService.js");
 
 const router = require("express").Router();
 
@@ -18,7 +14,9 @@ router.post("/create", async (req, res) => {
     await createActivity(req.body.label, req.body.iconUrl);
 
     res.redirect("/catalog");
+
   } catch (err) {
+    // TODO render errors
     res.render("createActivity", {
       title: "Create New Activity",
     });
@@ -32,9 +30,7 @@ router.get("/:roomId/extras", async (req, res) => {
   const activities = await getAllActivities();
 
   activities.forEach((a) => {
-    if (
-      (room.activities || []).some((id) => id.toString() == a._id.toString())
-    ) {
+    if ((room.activities || []).some((id) => id.toString() == a._id.toString())) {
       a.checked = true;
     }
   });

@@ -1,6 +1,6 @@
 <section id="login-section" class="">
 
-  <h1 class="item">Sing In</h1>
+  <h1 class="item">Sign in to Chalet Villages</h1>
 
   <main class="item padded align-center">
 
@@ -13,18 +13,21 @@
         {{/each}}
 
       </div>
-       {{/if}}
+      {{/if}}
 
       <div class="aligned pad-top">
-        <label><span>Username:</span>
+        <label><span>Username or email address:</span>
           <input type="text" id="username" name="username" /></label>
         <label><span>Password:</span>
           <input type="password" id="password" name="password" /></label>
       </div>
 
-        <div class="cta pad-med">
-          <input class="cta action" type="submit" value="Sing In">
-        </div>
+      <div class="cta pad-med">
+        <input class="cta action" type="submit" value="Sign in">
+      </div>
+
+      <div class="p-small pad-med">
+        <p>New to Chalet Villages? <a href="/auth/register"> Create an account</a></p>
       </div>
 
     </form>

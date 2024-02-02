@@ -19,12 +19,31 @@
           <li>
             <a href="/catalog">Browse Accommodation</a>
           </li>
+
+          {{#if hasUser}}
+
           <li>
             <a href="/create">Host</a>
           </li>
           <li>
             <a href="/activity/create">Create Activity</a>
           </li>
+          <li>
+            <a href="/auth/logout">Logout</a>
+          </li>
+
+          {{else}}
+
+          <li>
+            <a href="/auth/register">Register</a>
+          </li>
+
+          <li>
+            <a href="/auth/login">Sign in</a>
+          </li>
+
+          {{/if}}
+          
         </ul>
       </nav>
     </header>

@@ -6,7 +6,7 @@
 @import url('./layout-position.css');
 @import url('./layout-forms.css');
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500&family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&family=Roboto:ital,wght@1,300&display=swap');
 
 .style-divider {
   background-color: red;
