@@ -13,7 +13,7 @@ module.exports = (app) => {
   app.use("/create", hasUser(), createController);
   app.use("/delete", deleteController);
   app.use("/activity", activityController);
-  app.use("/auth", isGuest(), authController);
+  app.use("/auth", authController);
 
   app.use(defaultController);
 };

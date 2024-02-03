@@ -1,6 +1,10 @@
 <section>
+  {{#if hasUser}}
+  <h1 class="item">Welcome, {{username}}!</h1>
+  {{else}}
   <h1 class="item">Chalets in the Alps</h1>
-
+  {{/if}}
+  
   <div class="item">
 
     <main class="layout left med">

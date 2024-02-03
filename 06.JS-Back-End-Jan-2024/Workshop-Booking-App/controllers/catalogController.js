@@ -27,6 +27,10 @@ router.get("/:id", async (req, res) => {
   const roomId = req.params.id;
   const room = await getById(roomId);
 
+  if (req.user && req.user._id == room.owner) {
+    room.isOwner = true;
+  }
+
   if (room) {
     res.render("details", {
       title: res.locals.title,

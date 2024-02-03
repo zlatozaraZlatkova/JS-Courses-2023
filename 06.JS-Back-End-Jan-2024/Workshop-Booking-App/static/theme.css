@@ -25,6 +25,9 @@ main {
 footer {
     color: white;
 }
+.footer-item {
+    color: black;
+}
 
 
 .hl footer {
@@ -49,14 +52,19 @@ footer {
 }
 
 .action:hover,
+.action-edit:hover
 .action-del:hover {
     background-color: hsl(var(--secondary-color), var(--secondary-s), var(--secondary-l));
     cursor: pointer;
     color: white;
 }
 
+.action-edit {
+    background-color: rgb(216, 131, 20);
+    color: white;
+}
+
 .action-del {
-    /* background-color: rgb(216, 131, 20); */
     background-color: #953253;
     color: white;
 }

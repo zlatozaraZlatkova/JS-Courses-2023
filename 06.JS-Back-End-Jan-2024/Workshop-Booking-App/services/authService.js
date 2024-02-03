@@ -19,7 +19,8 @@ async function register(username, password) {
 
   //view model
   return {
-    username,
+    _id: user._id,
+    username: user.username,
     roles: user.roles
   }
 
@@ -40,7 +41,7 @@ async function login(username, password) {
 
   //view model
   return {
-
+    _id: user._id,
     username: user.username,
     roles: user.roles
   }

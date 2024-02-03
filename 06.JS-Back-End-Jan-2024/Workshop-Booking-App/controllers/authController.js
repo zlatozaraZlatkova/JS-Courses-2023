@@ -57,6 +57,12 @@ router.post("/register", async (req, res) => {
 });
 
 
+router.get("/logout", (req, res) => {
+  res.clearCookie("jwt");
+  return res.redirect("/");
+});
+
+
 function attachToken(req, res, data) {
   const token = req.signJwt(data);
   res.cookie("jwt", token, { maxAge: 3600000 });
