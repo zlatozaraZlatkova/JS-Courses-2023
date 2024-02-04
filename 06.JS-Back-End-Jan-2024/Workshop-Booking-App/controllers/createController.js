@@ -9,7 +9,7 @@ router.get("/", (req, res) => {
 
 router.post("/", async (req, res) => {
   try {
-    const result = await create(req.body, req.user._id);
+    const result = await create(req.body, req.user._id, req.user.username);
     res.redirect("/catalog/" + result._id);
   } catch (err) {
     res.render("create", {

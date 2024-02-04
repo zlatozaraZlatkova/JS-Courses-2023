@@ -8,7 +8,8 @@ const chaletSchema = new Schema({
   price: { type: Number, required: true, min: 1, max: 1000 },
   imgUrl: { type: String, required: true },
   activities: { type: [Types.ObjectId], default: [], ref: "Activity" },
-  owner: { type: Types.ObjectId, required: true, ref: "User"}
+  owner: { type: Types.ObjectId, required: true, ref: "User"},
+  ownerName: { type: String, required: true, ref: "User" }
 });
 
 const Chalet = model("Chalet", chaletSchema);

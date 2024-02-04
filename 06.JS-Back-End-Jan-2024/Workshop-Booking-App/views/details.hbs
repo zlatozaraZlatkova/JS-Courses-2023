@@ -1,42 +1,40 @@
 <section id="catalog-section">
 
-  {{#with room}}
-  <h1 class="item">{{name}}</h1>
+  <h1 class="item">{{room.name}}</h1>
   <div class="item padded">
     <main class="layout right large">
       <div class="col">
-        <img src="{{imgUrl}}" class="img-large" />
+        <img src="{{room.imgUrl}}" class="img-large" />
       </div>
 
       <div class="content pad-med">
-        <p>Location: <strong>{{city}}</strong></p>
-        <p>{{description}}</p>
+        <p>Location: <strong>{{room.city}}</strong></p>
+        <p>{{room.description}}</p>
 
         <div class="align-left">
-          <div class="pad-top">Maximum {{beds}} people</div>
-          <div class="pad-top">Price per night:<strong> {{price}}€</strong></div>
-          <ul class="catalog pad-med">
-            {{#each activities}}
+          <div class="pad-top">Maximum {{room.beds}} people</div>
+          <div class="pad-top">Price per night:<strong> {{room.price}}€</strong></div>
+          <ul class="catalog pad-top">
+            {{#each room.activities}}
             <li>{{label}} <img class="activity-icon" src="{{iconUrl}}"></li>
             {{/each}}
           </ul>
-        </div>
-        {{#if isOwner}}
-        <div class="align-left">
-          <a class="action-edit" href="/room/{{_id}}/edit">Edit</a>
-          <a class="action" href="/activity/{{_id}}/extras">Select Activities</a>
-          <a class="action-del" href="/delete/{{_id}}">Delete</a>
+
+          {{#if room.isOwner}}
+          <div class="align-left pad-top">
+            <a class="action-edit" href="/room/{{room._id}}/edit">Edit</a>
+            <a class="action" href="/activity/{{room._id}}/extras">Select Activities</a>
+            <a class="action-del" href="/delete/{{room._id}}">Delete</a>
+          </div>
+          {{/if}}
         </div>
 
-        {{/if}}
-      </div>
     </main>
-    {{/with}}
-
     {{#if hasUser}}
-    <footer class="footer-item ">Listed by (TODO add owner)</footer>
+    <footer class="footer-item">Listed by {{room.ownerName}}</footer>
+    {{else}}
+    <footer class="footer-item"><a class="action" href="/auth/login">Requests</a></footer>
     {{/if}}
-
   </div>
 
 </section>
