@@ -22,32 +22,54 @@ async function create(roomData, ownerId, name) {
     ownerName: name
   };
 
-  const missingValues = Object.entries(room).filter(([key, value]) => !value);
-  if (missingValues.length > 0) {
-    throw new Error(
-      missingValues
-        .map((missing) => `${missing[0]} field is required!`)
-        .join("\n")
-    );
-  }
+  missingValues(room);
 
   const result = await Chalet.create(room);
 
   return result;
 }
 
-// async function deleteById(id) {
-//   const matchIndex = data.findIndex((r) => r.id == id);
-//   console.log(matchIndex);
+async function update(roomId, roomData) {
+  
+  missingValues(roomData);
 
-//   data.splice(matchIndex, 1);
-//   await persist();
-// }
+  const room = await Chalet.findById(roomId);
+
+  room.name = roomData.name;
+  room.city = roomData.city;
+  room.beds = Number(roomData.beds);
+  room.price = Number(roomData.price);
+  room.description = roomData.description
+  room.imgUrl = roomData.imgUrl;
+
+  await room.save();
+  
+  return room;
+
+
+}
+
+function missingValues(room) {
+  const missing = Object.entries(room).filter(([key, value]) => !value);
+  if (missing.length > 0) {
+    throw new Error(
+      missing.map((missing) => `${missing[0]} field is required!`)
+        .join("\n")
+    );
+  }
+}
+
+
+
+async function deleteById(id) {
+  return Chalet.findByIdAndDelete(id);
+}
 
 
 module.exports = {
   getAll,
   getById,
   create,
-  // deleteById,
+  update,
+  deleteById
 };

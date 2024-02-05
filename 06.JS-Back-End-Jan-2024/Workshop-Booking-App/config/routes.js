@@ -5,7 +5,8 @@ const defaultController = require("../controllers/defaultController");
 const deleteController = require("../controllers/deleteController");
 const activityController = require("../controllers/activityController");
 const authController = require("../controllers/authController");
-const { hasUser, isGuest, hasRole } = require("../middlewares/guards");
+const { hasUser } = require("../middlewares/guards");
+const editController = require("../controllers/editController");
 
 module.exports = (app) => {
   app.use("/", homeController);
@@ -14,6 +15,7 @@ module.exports = (app) => {
   app.use("/delete", deleteController);
   app.use("/activity", activityController);
   app.use("/auth", authController);
+  app.use("/edit", editController);
 
   app.use(defaultController);
 };

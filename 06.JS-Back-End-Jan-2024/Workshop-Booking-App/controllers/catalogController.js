@@ -4,8 +4,7 @@ const router = require("express").Router();
 
 router.get("/", async (req, res) => {
   const user = req.user;
-  console.log(user)
-  
+
   const search = req.query.search || "";
   const city = req.query.city || "";
   const fromPrice = Number(req.query.fromPrice) || 1;
@@ -27,15 +26,15 @@ router.get("/:id", async (req, res) => {
   const roomId = req.params.id;
   const room = await getById(roomId);
 
-  if (req.user && req.user._id == room.owner) {
-    room.isOwner = true;
-  }
-
   if (room) {
+    if (req.user && req.user._id == room.owner) {
+      room.isOwner = true;
+    } 
     res.render("details", {
       title: res.locals.title,
       room,
     });
+    
   } else {
     res.render("roomNotFound", {
       title: res.locals.title,

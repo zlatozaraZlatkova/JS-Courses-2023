@@ -1,8 +1,42 @@
-<h1>Confirm Deleting Room</h1>
-<h2>{{name}}</h2>
-<p>Location: <strong>{{city}}</strong></p>
-<p>Price: {{price}} EUR</p>
-<form method="post" action="/delete/{{id}}">
-  <input type="submit" value="Delete Product" />
-</form>
-<p><a href="/catalog/{{id}}" class="href">Cancel</a></p>
+<section id="delete-section">
+
+    <h1 class="item">Delete Accommodation</h1>
+
+    <main class="item padded align-center">
+
+        <form class="layout left large" method="post" action="/delete/{{room._id}}">
+            {{#if error}}
+            <div class="error-box">
+                {{#each error}}
+                <p>{{this}}</p>
+                {{/each}}
+            </div>
+            {{/if}}
+
+            {{#with room}}
+            <div class="col aligned">
+                <label><span>Name</span><input type="text" name="name" value="{{name}}" disabled /></label>
+                <label><span>City</span><input type="text" name="city" value="{{city}}" disabled /></label>
+                <label><span>Beds</span><input type="number" name="beds" value="{{beds}}" disabled /></label>
+                <label><span>Price per night</span><input type="number" name="price" value="{{price}}"
+                        disabled /></label>
+                <label><span>Image URL</span><input type="text" name="imgUrl" value="{{imgUrl}}" disabled /></label>
+            </div>
+
+            <div class="content pad-med align-center vertical">
+                <label>
+                    <span>Description</span>
+                    <textarea name="description" disabled>{{description}}</textarea>
+                </label>
+
+                <div class="align-center">
+                    <input class="action-del" type="submit" value="Confirm Delete" />
+                </div>
+            </div>
+            {{/with}}
+
+        </form>
+
+    </main>
+
+</section>
