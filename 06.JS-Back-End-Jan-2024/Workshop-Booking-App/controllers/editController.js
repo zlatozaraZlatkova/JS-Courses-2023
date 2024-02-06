@@ -1,6 +1,7 @@
-const { getById, update } = require("../services/accommodationService");
-
 const router = require("express").Router();
+const { parseError } = require('../utils/parser');
+
+const { getById, update } = require("../services/accommodationService");
 
 router.get("/:id", async (req, res) => {
   const roomId = req.params.id;
@@ -36,12 +37,12 @@ router.post("/:id", async (req, res) => {
     const result = await update(roomId, req.body);
     res.redirect("/catalog/" + result._id);
 
-  } catch (err) {
+  } catch (error) {
     req.body._id = roomId;
 
     res.render("edit", {
       title: "Edit Accommodation",
-      error: err.message.split("\n"),
+      error: parseError(error),
       room: req.body,
       roomId,
     });

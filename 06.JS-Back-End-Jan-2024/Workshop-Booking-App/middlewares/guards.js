@@ -18,13 +18,14 @@ function isGuest() {
   };
 }
 
-function hasRole() {
+function hasRole(role) {
   return (req, res, next) => {
     if (req.user == undefined) {
-      res.status(401).redirect("/");
+      res.status(401).redirect("/auth/login");
+      
     } else {
       if (req.user.roles.includes(role) == false) {
-        res.status(403).redirect("/login");
+        res.redirect("/activity/403")
       }
 
       next();

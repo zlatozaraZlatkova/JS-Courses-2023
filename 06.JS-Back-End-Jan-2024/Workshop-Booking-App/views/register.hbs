@@ -5,7 +5,7 @@
 
       {{#if error}}
       <div class="error-box">
-        {{#each error}}
+        {{#each error.messages}}
         <p>{{this}}</p>
         {{/each}}
 
@@ -14,11 +14,11 @@
 
       <div class="aligned pad-top">
         <label><span>Enter your username:</span>
-          <input type="text" id="username" name="username" /></label>
+          <input {{#if error.fields.username}}class="field-error"{{/if}}type="text" id="username" name="username" value="{{body.username}}" /></label>
         <label><span>Create a password:</span>
-          <input type="password" id="password" name="password" /></label>
+          <input {{#if error.fields.password}}class="field-error"{{/if}}type="password" id="password" name="password" /></label>
         <label><span>Repeat a password:</span>
-          <input type="password" id="repass" name="repass" /></label>
+          <input {{#if error.fields.repass}}class="field-error"{{/if}}type="password" id="repass" name="repass" /></label>
       </div>
 
       <div class="cta pad-med">

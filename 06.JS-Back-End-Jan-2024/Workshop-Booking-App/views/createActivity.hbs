@@ -1,24 +1,24 @@
 <section id="create-activities-section" class="">
-
+  
   <h1 class="item">Outdoor Activities</h1>
 
   <main class="item padded align-center">
 
-    <form method="post" action="/activity/create" class="layout large aligned">
-        {{!-- {{#if error}}
+    <form method="post" action="/activity/create" class="layout large">
+        {{#if error}}
       <div class="error-box">
-        {{#each error}}
+        {{#each error.messages}}
         <p>{{this}}</p>
         {{/each}}
 
       </div>
-       {{/if}} --}}
+       {{/if}}
 
       <div class="col aligned pad-med align-center">
         <label><span>Label:</span>
-          <input  type="text" id="name" name="label"/></label>
+          <input {{#if error.fields.label}}class="field-error"{{/if}} type="text" id="name" name="label" value="{{body.label}}"/></label>
         <label><span>Icon URL:</span>
-          <input type="text" id="city" name="iconUrl" /></label>
+          <input {{#if error.fields.iconUrl}}class="field-error"{{/if}}type="text" id="city" name="iconUrl" value="{{body.iconUrl}}"/></label>
       </div>
 
      

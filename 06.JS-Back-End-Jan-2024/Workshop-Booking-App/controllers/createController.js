@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const { create } = require("../services/accommodationService");
+const { parseError } = require('../utils/parser');
 
 router.get("/", (req, res) => {
   res.render("create", {
@@ -11,10 +12,12 @@ router.post("/", async (req, res) => {
   try {
     const result = await create(req.body, req.user._id, req.user.username);
     res.redirect("/catalog/" + result._id);
-  } catch (err) {
+    
+  } catch (error) {
     res.render("create", {
       title: "Request Error",
-      error: err.message.split("\n"),
+      body: req.body,
+      error: parseError(error),
     });
   }
 });
