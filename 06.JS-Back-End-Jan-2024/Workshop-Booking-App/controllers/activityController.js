@@ -20,8 +20,9 @@ router.post("/create", hasRole("admin"),
   body("iconUrl").trim(),
 
   async (req, res) => {
+    const { errors } = validationResult(req);
+
     try {
-      const { errors } = validationResult(req);
       if (errors.length > 0) {
         throw errors;
       }
