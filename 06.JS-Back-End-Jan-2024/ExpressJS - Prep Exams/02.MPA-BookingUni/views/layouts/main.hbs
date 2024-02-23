@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {{!-- link favicon.ico --}}
+  <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
+   {{!-- link css --}}
+  <link rel="stylesheet" href="/static/css/style.css">
+  <title>{{title}}</title>
+</head>
+
+<body>
+
+  <div>
+    {{!-- DON'T HAVE CLIENT-SIDE RENDERING --}}
+    {{!-- <div class="notification loadingBox">
+      Loading …
+    </div>
+
+    <div class="notification infoBox">
+      <span>Info</span>
+    </div> --}}
+
+    {{#if errors}}
+    <div class="notification errorBox">
+      {{#each errors}}
+      <span>{{this}}</span>
+      {{/each}}
+    </div>
+    {{/if}}
+
+  </div>
+
+
+  <div id="container">
+    
+    <nav>
+      <div class="left-container">
+        <ul>
+          <li><a href="/">Home</a></li>
+
+          {{#if username}}
+           <li><a href="/hotel/create">Add +</a></li>
+          {{else}}
+
+          <li><a href="/auth/login">Login</a></li>
+          <li><a href="/auth/register">Register</a></li>
+          {{/if}}
+
+        </ul>
+      </div>
+
+      {{#if username}} 
+       <div class="right-container">
+        <a href="/profile" class="log-out">{{username}}</a>
+        <a href="/auth/logout" class="log-out">Logout</a>
+      </div>
+      {{/if}}
+    </nav>
+
+
+    <main>
+      {{{body}}}
+    </main>
+
+    <footer>@SoftUni - JS Back-end - BookingUni 2020</footer>
+
+  </div>
+
+
+</body>
+
+</html>
