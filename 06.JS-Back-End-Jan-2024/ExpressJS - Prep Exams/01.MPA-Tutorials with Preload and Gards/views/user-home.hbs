@@ -1,11 +1,11 @@
 <h1 class="text-center">Courses</h1>
-{{!-- SEARCH SECTION --}}
+
 <section>
   <a href="/catalog/create" class="btn btn-warning ">Create Course</a>
-  {{!-- if we don't put method and action in form by default method is "get" and action is"current page" --}}
+ 
   <form class="search float-right">
     <label>Search: </label>
-    {{!-- IMPORTANT: add name and value --}}
+  
     <input type="text" name="search" value="{{search}}">
     <input type="submit" class="btn btn-primary" value="Search">
   </form>
@@ -16,10 +16,6 @@
   <div class="row ">
     <div class="card-deck d-flex justify-content-center">
       {{#each courses}}
-      {{!--USE SEPARATE CARD {{>userCourseCard}} --}}
-      {{!-- IMPORTANT USE myPartial prefix=../prefix. In this situation we became direct "username" from context --}}
-      {{!-- custom data cn be passed to partials through hash parameters --}}
-      {{!-- hasUser === username {{>courseCard username=../username}} --}}
        {{>courseCard hasUser=../hasUser}}
       {{/each}}
 
