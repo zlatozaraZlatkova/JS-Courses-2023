@@ -1,5 +1,5 @@
 module.exports =() => (req, res, next) => {
-  res.locals.hsUser = req.user != undefined;
+  res.locals.hasUser = req.user != undefined;
 
   if(req.user != undefined) {
     res.locals.hasUser = true;
