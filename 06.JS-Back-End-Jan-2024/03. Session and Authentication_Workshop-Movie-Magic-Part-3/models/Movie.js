@@ -24,8 +24,6 @@ const movieSchema = new Schema({
   //creatorId
   owner: { type: Types.ObjectId, ref: "User"},
 
-  //only del flag
-  //isDelete: { type: Boolean, default: false }
 });
 
 movieSchema.index(

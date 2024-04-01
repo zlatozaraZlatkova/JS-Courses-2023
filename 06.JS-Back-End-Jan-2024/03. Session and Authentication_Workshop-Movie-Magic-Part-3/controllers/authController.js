@@ -24,7 +24,6 @@ router.post("/register", async (req, res) => {
       req.body.password
     );
 
-
     res.redirect("/auth/login");
 
   } catch (err) {
@@ -54,8 +53,7 @@ router.post("/login", async (req, res) => {
     }
  
     const token = await login(req.body.email, req.body.password);
-    
-    //! IMPORTANT {httpOnly: true}
+
     res.cookie("jwt", token, { httpOnly: true }, { maxAge: 360000 });
 
     res.redirect("/");

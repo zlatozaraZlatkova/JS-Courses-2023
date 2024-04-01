@@ -17,6 +17,7 @@ const castSchema = new Schema({
       return `${props} is not a valid image URL`;
     },
   },
+  owner: { type: Types.ObjectId, ref: "User"},
  
   movieList: { type: [Types.ObjectId], ref: "Movie", default: [] },
 });

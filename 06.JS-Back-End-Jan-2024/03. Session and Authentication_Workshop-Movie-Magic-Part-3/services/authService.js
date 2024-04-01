@@ -2,7 +2,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
 const User = require("../models/User");
-const JWT_SECRET = "sjasjash452151!#@a3wsdfasa,";
+const JWT_SECRET = "63ga3#KRbJa!sh877";
 
 
 async function register(email, password) {
@@ -50,7 +50,6 @@ function createSession({ _id, email }) {
     email,
   }
 
-  //! IMPORTANT {expiresIn: "2h"}
   const token = jwt.sign(payload, JWT_SECRET, {expiresIn: "2h"});
   return token;
 

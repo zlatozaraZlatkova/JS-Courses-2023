@@ -7,17 +7,18 @@ router.get("/create", async(req, res) => {
 });
 
 router.post("/create", async(req, res) => {
+  const userId = req.user._id;
   const cast = {
     name: req.body.name,
     age: Number(req.body.age),
     born: req.body.born,
     nameInMovie: req.body.nameInMovie,
     imageURL: req.body.imageURL,
+    owner: req.user._id
 
   }
   try {
     await createCast(cast);
-    //`/attach/${cast.id}`
     res.redirect("/");
 
 

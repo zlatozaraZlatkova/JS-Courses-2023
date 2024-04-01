@@ -1,60 +1,48 @@
 const Movie = require("../models/Movie");
 const Cast = require("../models/Cast");
+const User = require("../models/User");
 
 async function getAll() {
   return await Movie.find({}).lean();
 }
 
 async function getById(id) {
-  //! populate take data form reference
   return await Movie.findById(id).populate("castList").lean();
 
-  //при изтриване без да изтриваме данните в БД
-  //await Movie.findById(id).where({isDeleted: false}).populate("castList")
 }
 
-async function create(movie) {
-  return await Movie.create(movie);
+async function create(userId, movie) {
+
+  const itemCreate = await Movie.create(movie);
+
+  await User.findByIdAndUpdate({ _id: userId }, { $push: { createdMovies: itemCreate._id } }, { new: true });
+
+  return itemCreate;
 }
 
-async function addCast(movieId, castId) {
-  await Movie.findByIdAndUpdate({_id: movieId}, {$push: {castList: castId}}, {new: true});
-  await Cast.findByIdAndUpdate({_id: castId}, {$push: {movieList: movieId}}, {new: true});
-
-  //*version 2
-  /**
-   * 1. Вземаме филма по id
-   *  const movie = await Movie.findById(movieId);
-   * 
-   * 2. Добавяме към масива castList добавеното id на cast
-   *  movie.castList.push(castId)
-   * 
-   * 3. Запазваме промените в БД и връщаме резултата
-   *  return movie.save()
-   * 
-   * 
-   */
-
+async function addCast(movieId, castId, userId) {
+  await Movie.findByIdAndUpdate({ _id: movieId }, { $push: { castList: castId } }, { new: true });
+  await Cast.findByIdAndUpdate({ _id: castId }, { $push: { movieList: movieId } }, { new: true });
+  await User.findByIdAndUpdate({ _id: userId }, { $push: { createdCasts: castId } }, { new: true });
 
 }
 
 
-
-//стойство за изтриване без да изтриваме данните в БД
 async function deleteById(id) {
   return await Movie.findByIdAndDelete(id);
-  //await Movie.findByIdAndUpdate(id, {isDelete: true})
+
+
 }
 
 async function updateById(id, movie) {
   const existing = await Movie.findById(id)
-  //const existing = await Movie.findById(id, {isDelete: true})
+
   existing.title = movie.title;
   existing.genre = movie.genre;
   existing.director = movie.director;
   existing.year = Number(movie.year);
   existing.imageURL = movie.imageURL || undefined;
-  existing.rating = movie.rating;
+  existing.rating = Number(movie.rating);
   existing.description = movie.description;
 
 
@@ -69,6 +57,7 @@ module.exports = {
   getAll,
   getById,
   create,
-  addCast, 
-  deleteById
+  addCast,
+  deleteById,
+  updateById
 };
