@@ -11,7 +11,7 @@ module.exports = (app) => {
   app.engine(".hbs", hbs.engine);
   app.set("view engine", ".hbs");
 
-  app.use(express.urlencoded({ extended: true }));
+  app.use(express.urlencoded({ extended: false }));
 
   //img & css
   app.use("/static", express.static("static"));
