@@ -88,7 +88,7 @@ The Programming Basics course provides the necessary beginning programming skill
     </tr>
    <tr>
      <td>JavaScript Back-End</td>
-     <td><strong>$${\color{blue}Ongoing}$$</strong></td>
+      <td><a https://softuni.bg/certificates/details/212137/c592f8c3"><strong>See certificate</strong></a></td>
   </tr>  
   <tr>
      <td>JavaScript Applications</td>
