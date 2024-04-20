@@ -24,7 +24,7 @@ function getBestAvgSalaryByDepartment(inputData) {
     //console.log(fullData)
     const departmentsList = {};
     fullData.forEach((el) => {
-        const [name, salaryString, position, department, email, ageString] = el.split(' ');
+        const [name, salaryString, position, department, email, ageString] = el.split(" ");
         const salary = Number(salaryString);
         const age = Number(ageString);
         const newEmployee = new Department(name, salary, position, department, email, age);
@@ -45,7 +45,7 @@ function getBestAvgSalaryByDepartment(inputData) {
     console.log(`Highest Average Salary: ${bestDepartment}\n` +
         `${departmentsList[bestDepartment]
             .sort((a, b) => b.salary - a.salary)
-            .map(e => `${e.name} ${e.salary.toFixed(2)} ${e.email} ${e.age}`)
+            .map((e) => `${e.name} ${e.salary.toFixed(2)} ${e.email} ${e.age}`)
             .join("\n")}`);
 }
 function getInputData(dateArr) {
@@ -54,7 +54,7 @@ function getInputData(dateArr) {
         let [name, salary, position, department, emailStr, ageStr] = [];
         let email = "";
         let age = 0;
-        let line = dateArr[i].split(" ");
+        const line = dateArr[i].split(" ");
         if (line.length == 4) {
             [name, salary, position, department] = line;
             email = "n/a";
@@ -63,7 +63,7 @@ function getInputData(dateArr) {
         }
         else {
             [name, salary, position, department, emailStr, ageStr] = line;
-            let isNumberEmail = onlyDigits(emailStr);
+            const isNumberEmail = onlyDigits(emailStr);
             if (typeof emailStr == "string" && typeof ageStr == "string") {
                 email = emailStr;
                 age = Number(ageStr);
@@ -95,19 +95,19 @@ getBestAvgSalaryByDepartment([
 ]);
 console.log("----");
 getBestAvgSalaryByDepartment([
-    'Silver 496.37 Temp Coding silver@yahoo.com ',
-    'Sam 610.13 Manager Sales',
-    'John 609.99 Manager Sales john@abv.bg 44',
-    'Venci 0.02 Director BeerDrinking beer@beer.br 23',
-    'Andre 700.00 Director Coding',
-    'Popeye 13.3333 Sailor SpinachGroup popeye@pop.ey'
+    "Silver 496.37 Temp Coding silver@yahoo.com ",
+    "Sam 610.13 Manager Sales",
+    "John 609.99 Manager Sales john@abv.bg 44",
+    "Venci 0.02 Director BeerDrinking beer@beer.br 23",
+    "Andre 700.00 Director Coding",
+    "Popeye 13.3333 Sailor SpinachGroup popeye@pop.ey",
 ]);
 console.log("----");
 getBestAvgSalaryByDepartment([
-    'Fritz 768.991 Temp Coding',
-    'Claus 987.00 Manager Sales',
-    'Johnathan 234.45 Manager Sales 44',
-    'Kate 0.01 Director BeerDrinking 23',
-    'Andy 700 Director Coding',
-    'Poly 13.3333 Sailor SpinachGroup popeye@pop.ey'
+    "Fritz 768.991 Temp Coding",
+    "Claus 987.00 Manager Sales",
+    "Johnathan 234.45 Manager Sales 44",
+    "Kate 0.01 Director BeerDrinking 23",
+    "Andy 700 Director Coding",
+    "Poly 13.3333 Sailor SpinachGroup popeye@pop.ey",
 ]);
