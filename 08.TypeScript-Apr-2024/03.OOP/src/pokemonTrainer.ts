@@ -1,3 +1,4 @@
+/* 
 class Pokemon {
   pokemonName: string;
   pokemonElement: string;
@@ -103,3 +104,4 @@ solve([
   "Electricity",
   "End",
 ]);
+*/
