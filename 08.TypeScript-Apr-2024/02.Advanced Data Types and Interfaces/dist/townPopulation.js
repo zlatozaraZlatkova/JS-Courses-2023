@@ -5,7 +5,6 @@ const input = [
     "Mexico City <-> 23401925",
     "Istanbul <-> 1000",
 ];
-
 function getTownData(input) {
     let townList = {};
     input.forEach((town) => {
