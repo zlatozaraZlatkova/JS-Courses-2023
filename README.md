@@ -1,57 +1,72 @@
-# <p align="center"># SoftUni | JS-Courses-2023-2024<p>
+<h1 align="center">Software Engineering</h1>
 
-# TypeScript
+<p align="center">
+![](media/Logo_SoftUni.png)
+<b><i>A professional software engineering program, designed in partnership with IT organizations, which involves working on cutting-edge software technologies and learning a best practice in programming and software testing.</i></b>
+<br />
+<b>🌐 <a href="https://softuni.bg/curriculum">softuni.bg</a></b><br />
 
-## Course Info
+</p>
 
-TypeScript is the most popular language for developing server and front-end applications. Developed by Microsoft, it builds on JavaScript by incorporating static typing. This course provides a comprehensive introduction to the basic type management offered by the language. It covers object-oriented principles, the use of TypeScript in object-oriented programming, and the implementation and manipulation of classes, inheritance, abstraction, interfaces, and generics. Furthermore, the course dives deep into the foundational concepts of module and decorator functions. The goal of the workshop is to apply all your new knowledge to building a comprehensive TypeScript application.
+---
 
-## Skills
+## About
 
-- Working with statically typed data in TypeScript
-- Familiarity with OOP and basic principles
-- Working with classes, interfaces and generics
-- Getting to know modules and decorators
-- Building complete applications with TypeScript
+The professional software engineering program at SoftUni is designed to equip students with the fundamental knowledge and practical skills required to become software engineers, with a focus on the latest software technologies and best practices in programming.
+The curriculum comprises several professional fields and subsequent specializations, comprising a selection of training modules. Each training module is comprised of courses with a strong focus on practice, with students completing a practical exam at the end of each course to demonstrate the skills they have acquired.
 
-# JS Back-End
+<details open>
+<summary><b>Click to expand / collapse Curriculum section</b></summary>
 
-## Course Info
+<sup>**Note** _that this list is updated following the successful completion of the examination and the issuance of the certificate._</sup>
 
-The intensive course aims to teach how to develop server-side JavaScript applications on the Node.js platform using Express.js as a framework. It covers building a server with Node.js, the server-client relationship, and creating fast data-driven web applications with Node.js, Express.js, and MongoDB, using the latest concepts and tools. The course will also cover the MongoDB database, which is a popular non-relational database, and the Mongoose library for data retrieval. Additionally, a complete REST API will be built using Express.js and MongoDB towards the end of the course.
+The following section outlines the main modules of study and provides a brief explanation of the skills acquired, as well as links to additional resources for further information.
 
-## Skills
+<details>
 
-- Creating an MVC architecture
-- Application development with Express and Handlebars,
-- Non-relational databases
-- Working with server applications with Node.js
-- Working with the HTTP protocol
-- Using a Web Server
+<summary><b>![](media/repo.png)SoftUni Programming Basics Nov-2022</b></summary>
 
-# JS Applications
+###### Description
+The Programming Basics course provides the necessary beginning programming skills for all technology majors at Software University.
 
-## Course Info
+###### Skills
 
-During the JS Applications course, students learn what HTTP Requests are and how to use them. They will acquire knowledge of REST Services, understand Baas (backend as a service) and its usage, comprehend the concept of asynchronous code (such as promises, async, or await), and comprehend the concepts of templating and routing. Students will understand the architecture of an application and how to properly structure it. By the end of the course, they will have explored different design patterns and their practical guidelines, created their web components, used the Web Components standard, and built a Webpack environment from scratch.
-The course required creating a single-page application using the techniques learned from previous lectures. They will be assessed on this application.
+- Working with the console (data input and output)
+- Working with loops (for)
+- Working with more complex logic checks
+- Working with logical checks (if-else)
+- Performing simple calculations
+- Working with more complex loops (nested for loops and while loops)
 
-## Skills
+</details>
 
-- What is HTTP and how to make requests
-- Creating simple single-page applications
-- Working with templates and routing
-- Working with non-relational databases
-- Working with REST APIs and asynchronous programming
-- Testing the application
+<details>
+  
+<summary><b>![](media/repo.png)SoftUni Programming Fundamentals May-2023</b></summary>
 
-# Programming Advanced with JavaScript
 
-## Course Info
+###### Description
+With 'Programming Fundamentals', students begin to study SoftUni's in-house program for the comprehensive training of software engineers. The course examines fundamental concepts in programming, which are the basis for effective and quality training in the professional modules. Learners build on the knowledge gained in the Programming Basics course and begin to use more complex programming concepts and structures such as arrays, sheets, objects, and classes.
 
+Additional technologies that are essential for every software developer are thoroughly examined, including HTML and CSS, HTTP, bitwise operations, and other related technologies. The course effectively outlines the fundamentals of web development as well as one of the most prevalent technologies and tools. This approach effectively elucidates the forthcoming professional modules and the knowledge that will be acquired from them to become proficient software developers.
+
+###### Skills
+- Handling the standard functionality of the programming language
+- Basics of web development
+- Understanding the interrelationship between different IT concepts
+- Analysis of complex problems and reduction to computer-executable steps
+- Basic HTML and CSS skills
+- Working with linear data structures
+
+</details>
+<details>
+  
+<summary><b>![](media/repo.png)SoftUni JS Advanced Sep-2023</b></summary>
+
+###### Description
 In the 'JS Advanced' course, students get in-depth knowledge of the JavaScript language, such as the basics of syntax, working with arrays, matrices, objects, classes, and writing functions. They will study more complex concepts like function context, explicit binding, and event loop. The course will develop their algorithmic thinking. After successful completion of this course, students will be able to work with the DOM tree, do manipulations on it, and work with 'events'. Functional and OOP approaches to JavaScript programming will be explored, studying concepts such as inheritance, object composition, and prototype chaining.
 
-## Skills
+###### Skills
 
 - Working with classes and objects
 - Working with functions and JSON formats
@@ -60,37 +75,61 @@ In the 'JS Advanced' course, students get in-depth knowledge of the JavaScript l
 - Object-oriented programming
 - Functional programming
 
-# Programming Fundamentals with JavaScript
 
-## Course Info
+</details>
+<details>
+  
+<summary><b>![](media/repo.png)SoftUni JS Applications Oct-2023</b></summary>
 
-With 'Programming Fundamentals', students begin to study SoftUni's in-house program for the comprehensive training of software engineers. The course examines fundamental concepts in programming, which are the basis for effective and quality training in the professional modules. Learners build on the knowledge gained in the Programming Basics course and begin to use more complex programming concepts and structures such as arrays, sheets, objects, and classes.
+###### Description
+During the JS Applications course, students learn what HTTP Requests are and how to use them. They will acquire knowledge of REST Services, understand Baas (backend as a service) and its usage, comprehend the concept of asynchronous code (such as promises, async, or await), and comprehend the concepts of templating and routing. Students will understand the architecture of an application and how to properly structure it. By the end of the course, they will have explored different design patterns and their practical guidelines, created their web components, used the Web Components standard, and built a Webpack environment from scratch.
+The course required creating a single-page application using the techniques learned from previous lectures. They will be assessed on this application.
 
-Additional technologies that are essential for every software developer are thoroughly examined, including HTML and CSS, HTTP, bitwise operations, and other related technologies. The course effectively outlines the fundamentals of web development as well as one of the most prevalent technologies and tools. This approach effectively elucidates the forthcoming professional modules and the knowledge that will be acquired from them to become proficient software developers.
+###### Skills
 
-## Skills
+- What is HTTP and how to make requests
+- Creating simple single-page applications
+- Working with templates and routing
+- Working with non-relational databases
+- Working with REST APIs and asynchronous programming
+- Testing the application
 
-- Handling the standard functionality of the programming language
-- Basics of web development
-- Understanding the interrelationship between different IT concepts
-- Analysis of complex problems and reduction to computer-executable steps
-- Basic HTML and CSS skills
-- Working with linear data structures
+</details>
+<details>
+  
+<summary><b>![](media/repo.png)SoftUni JS Back-End Jan-2024</b></summary>
 
-# Programming Basics with JavaScript
+###### Description
+The intensive course aims to teach how to develop server-side JavaScript applications on the Node.js platform using Express.js as a framework. It covers building a server with Node.js, the server-client relationship, and creating fast data-driven web applications with Node.js, Express.js, and MongoDB, using the latest concepts and tools. The course will also cover the MongoDB database, which is a popular non-relational database, and the Mongoose library for data retrieval. Additionally, a complete REST API will be built using Express.js and MongoDB towards the end of the course.
 
-## Course Info
+###### Skills
 
-The Programming Basics course provides the necessary beginning programming skills for all technology majors at Software University.
+- Creating an MVC architecture
+- Application development with Express and Handlebars,
+- Non-relational databases
+- Working with server applications with Node.js
+- Working with the HTTP protocol
+- Using a Web Server
 
-## Skills
+</details>
+<details>
+  
+<summary><b>![](media/repo.png)SoftUni TypeScript Apr-2024</b></summary>
 
-- Working with the console (data input and output)
-- Working with loops (for)
-- Working with more complex logic checks
-- Working with logical checks (if-else)
-- Performing simple calculations
-- Working with more complex loops (nested for loops and while loops)
+###### Description
+TypeScript is the most popular language for developing server and front-end applications. Developed by Microsoft, it builds on JavaScript by incorporating static typing. This course provides a comprehensive introduction to the basic type of management offered by the language. It covers object-oriented principles, the use of TypeScript in object-oriented programming, and the implementation and manipulation of classes, inheritance, abstraction, interfaces, and generics. Furthermore, the course dives deep into the foundational concepts of module and decorator functions. The goal of the workshop is to apply all your new knowledge to building a comprehensive TypeScript application.
+
+###### Skills
+
+- Working with statically typed data in TypeScript
+- Familiarity with OOP and basic principles
+- Working with classes, interfaces and generics
+- Getting to know modules and decorators
+- Building complete applications with TypeScript
+
+</details>
+
+
 
 ## Courses and Certificates
 
@@ -125,3 +164,37 @@ The Programming Basics course provides the necessary beginning programming skill
   </tr>
 </table>
 </div>
+
+
+## License
+<details>
+<summary>Expand License</summary>
+
+```
+The MIT License (MIT)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sub-license, and/or sell
+copies of the Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included install
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANT ABILITY, FITNESS FOR A
+PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
+
+
+<p  align="center">
+  <i>© <a href="https://github.com/zlatozaraZlatkova">Zlatozara Zlatkova</a> 2023-2024</i><br>
+  <i>Licensed under MIT</a></i><br>
+  <a href="https://github.com/zlatozaraZlatkova"><img src="https://i.ibb.co/4KtpYxb/octocat-clean-mini.png" /></a><br>
+  <sup>Thanks for visiting :)</sup>
+</p>
