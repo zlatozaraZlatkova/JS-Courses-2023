@@ -1,5 +1,19 @@
 # <p align="center"># SoftUni | JS-Courses-2023-2024<p>
 
+# TypeScript
+
+## Course Info
+
+TypeScript is the most popular language for developing server and front-end applications. Developed by Microsoft, it builds on JavaScript by incorporating static typing. This course provides a comprehensive introduction to the basic type management offered by the language. It covers object-oriented principles, the use of TypeScript in object-oriented programming, and the implementation and manipulation of classes, inheritance, abstraction, interfaces, and generics. Furthermore, the course dives deep into the foundational concepts of module and decorator functions. The goal of the workshop is to apply all your new knowledge to building a comprehensive TypeScript application.
+
+## Skills
+
+- Working with statically typed data in TypeScript
+- Familiarity with OOP and basic principles
+- Working with classes, interfaces and generics
+- Getting to know modules and decorators
+- Building complete applications with TypeScript
+
 # JS Back-End
 
 ## Course Info
@@ -86,6 +100,10 @@ The Programming Basics course provides the necessary beginning programming skill
     <th>Course</th>
     <th>Certificate</th>
     </tr>
+  <tr>
+     <td>TypeScript</td>
+      <td><a href="https://softuni.bg/certificates/details/215471/40758059"><strong>See certificate</strong></a></td>
+  </tr>  
    <tr>
      <td>JavaScript Back-End</td>
       <td><a href="https://softuni.bg/certificates/details/212137/c592f8c3"><strong>See certificate</strong></a></td>
