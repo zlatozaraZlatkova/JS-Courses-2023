@@ -1,7 +1,6 @@
 <h1 align="center">Software Engineering</h1>
 
 <p align="center">
-![](media/Logo_SoftUni.png)
 <b><i>A professional software engineering program, designed in partnership with IT organizations, which involves working on cutting-edge software technologies and learning a best practice in programming and software testing.</i></b>
 <br />
 <b>🌐 <a href="https://softuni.bg/curriculum">softuni.bg</a></b><br />
@@ -24,7 +23,7 @@ The following section outlines the main modules of study and provides a brief ex
 
 <details>
 
-<summary><b>![](media/repo.png)SoftUni Programming Basics Nov-2022</b></summary>
+<summary><b>SoftUni Programming Basics Nov-2022</b></summary>
 
 ###### Description
 The Programming Basics course provides the necessary beginning programming skills for all technology majors at Software University.
@@ -42,7 +41,7 @@ The Programming Basics course provides the necessary beginning programming skill
 
 <details>
   
-<summary><b>![](media/repo.png)SoftUni Programming Fundamentals May-2023</b></summary>
+<summary><b>SoftUni Programming Fundamentals May-2023</b></summary>
 
 
 ###### Description
@@ -61,7 +60,7 @@ Additional technologies that are essential for every software developer are thor
 </details>
 <details>
   
-<summary><b>![](media/repo.png)SoftUni JS Advanced Sep-2023</b></summary>
+<summary><b>SoftUni JS Advanced Sep-2023</b></summary>
 
 ###### Description
 In the 'JS Advanced' course, students get in-depth knowledge of the JavaScript language, such as the basics of syntax, working with arrays, matrices, objects, classes, and writing functions. They will study more complex concepts like function context, explicit binding, and event loop. The course will develop their algorithmic thinking. After successful completion of this course, students will be able to work with the DOM tree, do manipulations on it, and work with 'events'. Functional and OOP approaches to JavaScript programming will be explored, studying concepts such as inheritance, object composition, and prototype chaining.
@@ -79,7 +78,7 @@ In the 'JS Advanced' course, students get in-depth knowledge of the JavaScript l
 </details>
 <details>
   
-<summary><b>![](media/repo.png)SoftUni JS Applications Oct-2023</b></summary>
+<summary><b>SoftUni JS Applications Oct-2023</b></summary>
 
 ###### Description
 During the JS Applications course, students learn what HTTP Requests are and how to use them. They will acquire knowledge of REST Services, understand Baas (backend as a service) and its usage, comprehend the concept of asynchronous code (such as promises, async, or await), and comprehend the concepts of templating and routing. Students will understand the architecture of an application and how to properly structure it. By the end of the course, they will have explored different design patterns and their practical guidelines, created their web components, used the Web Components standard, and built a Webpack environment from scratch.
@@ -97,7 +96,7 @@ The course required creating a single-page application using the techniques lear
 </details>
 <details>
   
-<summary><b>![](media/repo.png)SoftUni JS Back-End Jan-2024</b></summary>
+<summary><b>SoftUni JS Back-End Jan-2024</b></summary>
 
 ###### Description
 The intensive course aims to teach how to develop server-side JavaScript applications on the Node.js platform using Express.js as a framework. It covers building a server with Node.js, the server-client relationship, and creating fast data-driven web applications with Node.js, Express.js, and MongoDB, using the latest concepts and tools. The course will also cover the MongoDB database, which is a popular non-relational database, and the Mongoose library for data retrieval. Additionally, a complete REST API will be built using Express.js and MongoDB towards the end of the course.
@@ -114,7 +113,7 @@ The intensive course aims to teach how to develop server-side JavaScript applica
 </details>
 <details>
   
-<summary><b>![](media/repo.png)SoftUni TypeScript Apr-2024</b></summary>
+<summary><b>SoftUni TypeScript Apr-2024</b></summary>
 
 ###### Description
 TypeScript is the most popular language for developing server and front-end applications. Developed by Microsoft, it builds on JavaScript by incorporating static typing. This course provides a comprehensive introduction to the basic type of management offered by the language. It covers object-oriented principles, the use of TypeScript in object-oriented programming, and the implementation and manipulation of classes, inheritance, abstraction, interfaces, and generics. Furthermore, the course dives deep into the foundational concepts of module and decorator functions. The goal of the workshop is to apply all your new knowledge to building a comprehensive TypeScript application.
