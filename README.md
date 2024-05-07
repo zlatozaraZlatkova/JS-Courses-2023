@@ -1,3 +1,9 @@
+<div align="center" style="height:15px">
+   <a href="https://softuni.bg/">
+   <img src="https://github.com/zlatozaraZlatkova/SoftUni-JS-Courses-2023-2024/blob/main/media/Logo_SoftUni.png" width="100rem">
+   </a>
+</div>
+
 <h1 align="center">Software Engineering</h1>
 
 <p align="center">
@@ -7,7 +13,6 @@
 
 </p>
 
----
 
 ## About
 
