@@ -1,0 +1,25 @@
+/* task 15 */
+h1 {
+  font-size: 50px;
+}
+.first {
+  text-decoration: underline;
+}
+#second {
+  font-style: italic;
+}
+
+/* task 16 */
+div {
+  background-color: green;
+}
+
+/* task 17 */
+div {
+  color: red;
+}
+
+/* task 18 */
+div {
+  font-family: "Gill Sans", sans-serif;
+}
