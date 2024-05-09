@@ -44,6 +44,9 @@ The Programming Basics course provides the necessary beginning programming skill
 - Performing simple calculations
 - Working with more complex loops (nested for loops and while loops)
 
+###### Labs and Exercises
+[Programming Basics](https://github.com/zlatozaraZlatkova/SoftUni-JS-Courses-2023-2024/tree/main/01.Programming-Basics-with-JavaScript-Nov-2022)
+
 </details>
 
 <details>
@@ -65,6 +68,9 @@ Additional technologies that are essential for every software developer are thor
 - Basic HTML and CSS skills
 - Working with linear data structures
 
+###### Labs and Exercises
+[Programming Fundamentals](https://github.com/zlatozaraZlatkova/SoftUni-JS-Courses-2023-2024/tree/main/02.Programming-Fundamentals-with-JavaScript-May-2023)
+
 </details>
 <details>
   
@@ -82,6 +88,9 @@ In the 'JS Advanced' course, students get in-depth knowledge of the JavaScript l
 - Working with linear structures
 - Object-oriented programming
 - Functional programming
+
+###### Labs and Exercises
+[JavaScript Advanced](https://github.com/zlatozaraZlatkova/SoftUni-JS-Courses-2023-2024/tree/main/03.Programming-Advanced-with-JavaScript-Sep-2023)
 
 
 </details>
@@ -103,6 +112,9 @@ The course required creating a single-page application using the techniques lear
 - Working with REST APIs and asynchronous programming
 - Testing the application
 
+###### Labs and Exercises
+[JavaScript Applications](https://github.com/zlatozaraZlatkova/SoftUni-JS-Courses-2023-2024/tree/main/05.Programming-Applications-with-JavaScript-Oct-2023)
+
 </details>
 <details>
   
@@ -121,6 +133,9 @@ The intensive course aims to teach how to develop server-side JavaScript applica
 - Working with the HTTP protocol
 - Using a Web Server
 
+###### Labs and Exercises
+[JavaScript Back-End](https://github.com/zlatozaraZlatkova/SoftUni-JS-Courses-2023-2024/tree/main/06.JS-Back-End-Jan-2024)
+
 </details>
 <details>
   
@@ -137,6 +152,9 @@ TypeScript is the most popular language for developing server and front-end appl
 - Working with classes, interfaces and generics
 - Getting to know modules and decorators
 - Building complete applications with TypeScript
+
+###### Labs and Exercises
+[TypeScript](https://github.com/zlatozaraZlatkova/SoftUni-JS-Courses-2023-2024/tree/main/08.TypeScript-Apr-2024)
 
 </details>
 
