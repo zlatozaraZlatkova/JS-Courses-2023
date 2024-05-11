@@ -1,0 +1,4 @@
+/* Use the child combinator to set text-decoration line-through to code */
+article > code {
+    text-decoration: line-through;
+}

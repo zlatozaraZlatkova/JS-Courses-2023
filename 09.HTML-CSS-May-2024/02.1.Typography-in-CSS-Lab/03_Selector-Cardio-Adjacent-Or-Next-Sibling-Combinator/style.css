@@ -1,0 +1,6 @@
+/* Use the adjacent combinator to set text-decoration underline to paragraphs. */
+/* The next-sibling combinator ( + ) separates two selectors and matches the second element 
+only if it immediately follows the first element */
+* + p {
+   text-decoration: underline;
+}

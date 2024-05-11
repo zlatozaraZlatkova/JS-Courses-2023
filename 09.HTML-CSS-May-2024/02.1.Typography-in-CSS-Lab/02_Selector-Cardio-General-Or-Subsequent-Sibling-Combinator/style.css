@@ -1,0 +1,4 @@
+/* Subsequent Sibling Combinator */
+p ~ span {
+    color: red;
+}

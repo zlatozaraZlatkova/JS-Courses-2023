@@ -1,0 +1,4 @@
+/* descendant combinator */
+article p {
+    background-color: yellow;
+}

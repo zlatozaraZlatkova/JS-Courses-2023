@@ -1,0 +1,5 @@
+/* Use the first type combinator to set background-color blue to paragraphs. */
+
+article p:first-of-type {
+    background-color: blue;
+}

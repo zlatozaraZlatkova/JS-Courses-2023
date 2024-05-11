@@ -1,0 +1,10 @@
+/* Use the first child combinator to set font-weight bold and color red to span. */
+
+article span:first-child {
+    color: red;
+    font-weight: bold;
+}
+
+/* article span:nth-child(even) {
+    background-color: blueviolet;
+} */

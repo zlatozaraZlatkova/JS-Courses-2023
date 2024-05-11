@@ -1,0 +1,4 @@
+/* Use the last child combinator to set color red to span. */
+article span:last-of-type {
+    color:red;
+}
