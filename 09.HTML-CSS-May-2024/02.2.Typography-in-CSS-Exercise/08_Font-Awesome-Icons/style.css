@@ -1,0 +1,84 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+
+html {
+  font: 14px/1.5 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+body, table, input {
+  font:inherit;
+}
+
+
+body {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+nav {
+  width: 12.5em;
+  border: 1px solid #e3e3e3;
+  line-height: 1.25em;
+  background-color: #f5f5f5;
+}
+
+li {
+  list-style: none;
+  line-height: 1.563em;
+  margin-left: -0.938em;
+}
+
+a {
+  text-decoration: none;
+  color: #c83025;
+}
+
+/* icon i */
+nav a [class*="fa-"],
+button [class*="fa-"] {
+  width: 1.14em;
+  padding-right: 0.28em;
+ 
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  padding: 0.25em 0.75em;
+  margin: 0;
+  line-height: 1.25em;
+  color: #ffffff;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+button.shopping {
+  background-color: #83a94c;
+}
+button.info {
+  background-color: #008ed0;
+}
+button.delete {
+  background-color: #cc4036;
+}
+
+/* order list  */
+ol.todo {
+  margin-top: 3em;
+}
+
+ol.todo li {
+  display: block;
+  list-style: none outside;
+}
+
+ol.todo li:before {
+  display: inline-block;
+  content: "\f10c";
+  font-family: "Font Awesome 6 Free";
+  margin-right: 0.5em;
+  opacity: 0.5;
+}
+
+ol.todo .done:before {
+  content: "\f14a";
+}

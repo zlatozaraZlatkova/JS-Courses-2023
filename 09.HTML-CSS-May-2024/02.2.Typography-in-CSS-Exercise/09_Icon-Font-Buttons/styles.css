@@ -1,0 +1,37 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+html {
+  font: 14px/1.5 "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body,
+table,
+input {
+  font: inherit;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.875em;
+  line-height: 3;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  border-radius: 0.338em;
+  padding: 0.788em 1.688em;
+}
+
+a:hover {
+  color: #eee;
+}
+/* icon i */
+p a[class*="fas-"] {
+  padding-right: 0.338em;
+}
+a.green {
+  background-color: green;
+}
+a.orange {
+  background-color: orange;
+}

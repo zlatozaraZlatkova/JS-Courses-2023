@@ -1,0 +1,55 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css");
+
+html {
+  font: 18px/1.5 Verdana, Geneva, Tahoma, sans-serif;
+}
+body,
+table,
+input {
+  font: inherit;
+}
+
+/* unordered list  */
+ul.check {
+  margin-top: 3em;
+}
+
+ul.check li,
+ul.star li,
+ul.contact li {
+  display: block;
+  list-style: none outside;
+  font-size: 1.563em;
+}
+
+ul.check li:before,
+ul.star li:before,
+ul.contact li:before { 
+  display: inline-block;
+  content: "\f058";
+  font-family: "Font Awesome 6 Free";
+  margin-right: 0.5em;
+  opacity: 0.5;
+  color: #2fcc71;
+}
+
+ul.star li:before {
+  content: "\f005";
+  color: coral;
+}
+
+ul.contact li.mail:before {
+  content: "\f0e0";
+  color: #3498da;
+}
+
+ul.contact li.twitter:before {
+  content: "\f2b9";
+  color: #3498da;
+}
+
+ul.contact li.linkedin:before {
+  content: "\f007";
+  color:#3498da;
+}
