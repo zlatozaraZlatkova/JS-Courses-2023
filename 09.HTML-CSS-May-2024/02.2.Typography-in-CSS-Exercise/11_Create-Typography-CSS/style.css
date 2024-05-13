@@ -1,0 +1,53 @@
+html {
+  font: 16px/1.5 Arial, Helvetica, sans-serif;
+}
+
+body, table, input {
+  font: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 0;
+  margin: 0 0 0.5em 0;
+  line-height: 1.1;
+}
+
+.web-page {
+  max-width: 35em;
+  margin: 0 auto;
+}
+
+
+tr:nth-child(odd) {
+  background-color: #ccc;
+}
+
+th, td {
+  width: 27.75em;
+  height: 2em;
+  border: 1px solid rgb(244, 248, 252);
+  padding-left: 0.313em;
+}
+
+th {
+    background-color: rgb(160, 162, 164);
+  }
+  
+
+blockquote {
+  border-left: 3px solid rgb(221, 221, 221);
+  font-style: italic;
+  padding-left: 0.75em;
+}
+
+blockquote p:last-child {
+  text-align: right;
+}
+
+/* h1 {font-size: 2.8em;}
+h2 {font-size: 2.2em;}
+h3 {font-size: 1.8em;}
+h4 {font-size: 1.6em;}
+h5 {font-size: 1.2em;}
+h6 {font-size: 1em;} */
