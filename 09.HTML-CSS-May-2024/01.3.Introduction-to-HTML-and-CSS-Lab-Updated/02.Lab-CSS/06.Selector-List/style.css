@@ -1,0 +1,51 @@
+/* typology */
+html {
+    font: 16px/1.5 Arial, Helvetica, sans-serif;
+    
+}
+
+body, table, input {
+    font: inherit;
+    margin: 0 auto;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    font-weight: bold;
+}
+
+nav li {
+    display: inline-block;
+    padding-right: 1em;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+/* Selector List for Hover Effects */
+nav li a:hover {
+    cursor: pointer;
+    padding: 10px;
+    border: 2px dotted darkred;
+}
+
+/* Selector List for Text Styles */
+h1, h2, p {
+   line-height: 1.1;
+} 
+
+/* Selector List for Layout Styles */
+header, section, footer {
+    border: 1px solid lightslategray;
+    padding: 0.75em;
+    margin: 1rem;
+}
+
+/* Combining Different Types of Selectors: */
+nav li a, .first-section, .second-section, footer {
+    color: rgb(72, 70, 70);
+    font-family: 'Courier New', Courier, monospace;
+}

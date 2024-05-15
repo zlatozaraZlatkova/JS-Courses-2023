@@ -1,0 +1,28 @@
+/* Descendant Combinator */
+div p {
+  color: blue;
+}
+
+/* Child Combinator */
+div ul > li {
+  list-style-type: circle;
+  color: black;
+}
+
+.foo p > span {
+  color: red;
+}
+
+/* Adjacent Sibling Combinator */
+div p:nth-child(2) {
+  background-color: lightgray;
+}
+
+/* General Sibling Combinator */
+/* p ~ span {
+  color: red;
+} */
+
+.foo p ~ .foo span {
+  color: red;
+}

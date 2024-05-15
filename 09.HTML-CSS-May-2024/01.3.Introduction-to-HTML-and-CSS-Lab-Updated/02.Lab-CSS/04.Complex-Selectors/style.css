@@ -1,0 +1,96 @@
+html {
+  font: 16px/1.5 Georgia, "Times New Roman", Times, serif;
+}
+
+body,
+table,
+input {
+  font: inherit;
+}
+
+body {
+  margin: 1.5em;
+  color: rgb(24, 33, 33);
+}
+
+/* Descendant Selector */
+nav ul a {
+  text-decoration: none;
+}
+
+/* Pseudo-class Selector */
+nav ul li:first-child {
+  font-weight: bold;
+}
+
+nav ul li:last-child {
+  font-style: italic;
+}
+
+
+/* Child Combinator */
+header span {
+  color: brown;
+}
+
+
+/* Adjacent Sibling Combinator */
+header + div,
+div + article {
+    padding: 0.2em;
+}
+
+/* General Sibling Combinator */
+.first ~ .next p {
+  padding: 0.75em;
+  background-color: lightskyblue;
+}
+
+/* Pseudo-element Selector */
+.first h1::before {
+    content: ">> ";
+    color: darkred;
+}
+
+.first h1::after {
+    content: " <<";
+    color: darkred;
+}
+
+footer {
+  border-radius: 5px;
+  background-color: lightgray;
+  height: 5em;
+  padding-left: 0.5em;
+}
+
+footer p {
+  margin: 0;
+  padding-bottom: 0.2em;
+}
+
+/* Attribute Selector */
+input[type=text] {
+    box-sizing: border-box;
+    padding: 8px 10px;
+    border: 2px solid #045faa;
+    outline: none;
+    background-color: whitesmoke;
+}
+
+input[type="text"]:focus {
+    border: 2px solid #1b7474;
+}
+
+input[type="submit"] {
+  background-color: #045faa;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #1b7474;
+}

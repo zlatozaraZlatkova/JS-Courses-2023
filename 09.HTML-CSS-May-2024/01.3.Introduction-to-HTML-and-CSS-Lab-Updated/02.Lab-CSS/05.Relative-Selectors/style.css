@@ -1,0 +1,62 @@
+html {
+    font: 16px/1.5 Arial, Helvetica, sans-serif;
+
+}
+
+body,
+table,
+input {
+    font: inherit;
+
+}
+
+/* Descendant Selector */
+section p {
+    color: green;
+}
+
+
+/* Adjacent Sibling Selector: */
+.highlight + article {
+    background-color: lightcoral;
+}
+
+/* Second version with Child Selector & pseudo-class */
+/* section > *:last-child {
+    background-color: lightcoral;
+} */
+
+ul li {
+    list-style-type: none;
+    font-weight: bold;
+}
+
+ul li:nth-child(2) {
+    color: red;
+}
+
+ul.nested a:link {
+    text-decoration: none;
+}
+
+/* Combining pseudo-classes and pseudo-elements*/
+ul li:last-child .nested li:not(:last-child) {
+    color: rgb(0, 157, 255);
+    font-style: italic;
+}
+
+ul li:last-child .nested li:last-child a {
+    color: rgb(40, 146, 40);
+    font-weight: bold;
+}
+
+/* Second version with pseudo-class  */
+/* ul.nested li:last-child a {
+    color: rgb(40, 146, 40);
+    font-weight: bold;
+} */
+
+/* Combining Relative Selectors: */
+h2~p {
+    color: rgb(110, 43, 226);
+}

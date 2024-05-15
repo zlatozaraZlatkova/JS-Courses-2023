@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&display=swap");
+html {
+  font: 20px/1.5 "Verdana", "Geneva", "Tahoma", sans-serif;
+}
+
+body,
+table,
+input {
+  font: inherit;
+}
+body {
+  /* font-family: "Caveat", cursive; */
+  margin: 2em;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+p {
+  font-size: 0.8em;
+}
+
+#main-title h1 {
+  color: lightslategray;
+}
+
+#special-paragraph {
+  font-style: italic;
+}
+
+/* version pseudo-element
+ul li::marker {
+    content: '§ ';
+    font-size: 1.2em;
+    color: cornflowerblue;
+    font-weight: bold;
+   
+}
+/* version using a gradient*/
+.highlight ul > li {
+  font-size: 120%;
+  list-style-image: linear-gradient(to left bottom,rgb(230, 238, 146), rgb(53, 156, 98));
+  color: rgb(16, 165, 48);
+  font-family: "Dancing Script", cursive;
+}
+
+.highlight li:nth-child(1) {
+  max-width: 5em;
+  background-color: rgb(233, 233, 217);
+}
+.highlight li:nth-child(2) {
+  max-width: 10em;
+  background-color: rgb(235, 235, 141);
+}
+
+.highlight li:nth-child(3) {
+  max-width: 15em;
+  background-color: rgb(137, 224, 102);
+}

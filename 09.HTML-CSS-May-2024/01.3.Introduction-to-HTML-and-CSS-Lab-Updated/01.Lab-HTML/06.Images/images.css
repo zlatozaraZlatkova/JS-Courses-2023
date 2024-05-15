@@ -1,0 +1,34 @@
+html {
+    font: 16px/1.5 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+
+body,
+table,
+input {
+    font: inherit;
+}
+body {
+    margin: 2.75em;
+    background-color: whitesmoke;
+}
+
+ul {
+    /* Removes the bullets */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+div.vertical ul > li{
+    display: inline-block;
+}
+div.horizontal ul > li {
+    display: block;
+}
+
+footer p {
+    text-align: center;
+    
+}

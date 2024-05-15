@@ -1,0 +1,52 @@
+html {
+    font: 16px/1.5 Georgia, 'Times New Roman', Times, serif;
+}
+body, table, input {
+    font: inherit;
+}
+body {
+    margin: 0.75em;
+}
+
+/* Class and Element Combination */
+p.highlighted#firstP {
+    color: blue;
+    font-size: 1.125em;
+}
+
+/* ID and Element Combination */
+#content p {
+    background-color: orange;
+    padding: 1.1em 0.8em;
+}
+
+/* Attribute and Class Combination */
+input[type=text] {
+    box-sizing: border-box;
+    padding: 0.75em 1.25em;
+    border: 2px solid rgb(24, 196, 24);
+    border-style: inset;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 2px solid orange;   
+}
+
+/* Multiple Class Combination */
+.bold, 
+.intro li:last-child {
+    font-weight: 600;
+}
+.intro .italic {
+    font-style: italic;
+}
+
+/* Specificity Demonstration */
+
+.intro li:first-child {
+    color: rgb(91, 177, 231);
+}
+.intro li:last-child {
+    color: red;
+}
