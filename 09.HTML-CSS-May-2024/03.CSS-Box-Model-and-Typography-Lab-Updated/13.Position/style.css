@@ -1,0 +1,32 @@
+div,
+section {
+  border: 2px solid blue;
+  padding: 2em;
+  display: block;
+}
+section .item {
+  border: 1px solid #333;
+  padding: 0.5em;
+  width: 5em;
+  aspect-ratio: 1/1;
+  text-align: center;
+  align-content: center;
+}
+
+section.relative > div.item:nth-child(2) {
+  position: relative;
+  left: 5em;
+  top: 2em;
+  background-color: lightgreen;
+}
+
+/* relative position of container & absolute position of element */
+section.relative_and_absolute {
+  position: relative;
+}
+section.relative_and_absolute > div.item:nth-child(2) {
+  left: 4em;
+  top: 4em;
+  background-color: lightcoral;
+  position: absolute;
+}

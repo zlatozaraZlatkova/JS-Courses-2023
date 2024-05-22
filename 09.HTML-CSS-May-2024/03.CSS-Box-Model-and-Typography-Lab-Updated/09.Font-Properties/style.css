@@ -1,0 +1,12 @@
+div.font {
+    font-family: Arial, Helvetica, sans-serif;
+}
+div.size {
+    font-size: 24px;
+}
+div.style {
+    font-style: italic;
+}
+div.font-variant {
+    font-variant: small-caps;
+}

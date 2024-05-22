@@ -1,0 +1,16 @@
+div p {
+  border: 2px solid black;
+}
+.fixed {
+  width: 300px;
+}
+.percentage {
+  width: 50%;
+}
+.viewpoint {
+  width: 50vw;
+}
+.min-max {
+  min-width: 100px;
+  max-width: 300px;
+}
