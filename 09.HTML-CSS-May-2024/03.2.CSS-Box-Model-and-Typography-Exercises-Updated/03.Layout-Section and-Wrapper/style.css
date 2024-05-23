@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    font: 16px/1.5 Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+header, section, article, footer {
+    border: 2px solid black;
+    margin: 1em;
+    padding: 1em;
+}
+p {
+    border: 2px solid blue;
+    margin: 1em 2em;
+    padding: 1em 2em;
+}

@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    font: 16px/1.5 Arial, Helvetica, sans-serif;
+}
+
+.box-model {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+div>div {
+    border: 1px dotted blue;
+    margin: 1em;
+    padding: 1em;
+}
+
+#one {
+    background-color: lightsalmon;
+}
+
+#one::before {
+    content: "margin";
+}
+
+#two {
+    background-color: rgb(255, 227, 182);
+}
+
+#two::before {
+    content: "border";
+}
+
+
+#three {
+    background-color: lightgreen;
+}
+
+#three::before {
+    content: "padding";
+}
+
+
+#four {
+    background-color: lightblue;
+    text-align: center;
+}

@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    font: 16px/1.5 Arial, Helvetica, sans-serif;
+}
+
+main {
+    border: 2px solid green;
+    margin: 2em;
+    padding: 2em;
+    
+}
+section {
+    border: 2px solid blue;
+    max-width: 960px;
+    margin: 0 auto;
+}
+div {
+    border: 2px solid black;
+    text-align: center;
+    margin: 2em;
+    padding: 2em;
+}
+
+
+
