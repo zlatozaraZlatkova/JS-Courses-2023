@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,400;1,700&display=swap');
+
+body, table, input, button {
+    font: inherit;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 2em;
+    font-size: 1.1em;
+}
+/* Paragraphs */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2.8em;
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+h4 {
+    font-size: 1.6em;
+}
+
+h5 {
+    font-size: 1.4em;
+}
+
+h6 {
+    font-size: 1.2em;
+}
+
+/* Lists */
+p,
+ul,
+ol {
+    padding-bottom: 1.5em;
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+    padding-bottom: 0;
+}
+
+ul,
+ol {
+    padding-left: 1.5em;
+}
+
+ul {
+    list-style: square;
+}
+
+ul ul>li {
+    list-style: disc;
+}
+
+ul ul ul>li {
+    list-style: circle;
+}
+
+/* Blockquote */
+blockquote {
+    font-style: italic;
+    border-left: 5px solid #ddd;
+    margin: 1.5em;
+    margin-top: 0;
+    padding-left: 1em;
+}
+
+blockquote p:last-of-type {
+    padding-bottom: 0;
+}
+
+blockquote p.author {
+    text-align: right;
+    font-weight: bold;
+}
+
+
+/* Table */
+table {
+    width: 100%;
+    max-width: 400px;
+    /*! no space between borders of adjacent cells /td/ */
+    border-spacing: 0;
+}
+
+table,
+th,
+td {
+    border: 1px solid rgb(63, 62, 62);
+}
+
+
+th,
+td {
+    padding: 5px 10px;
+    border-top-width: 0;
+    border-left-width: 0;
+}
+
+th {
+    top: 0;
+    vertical-align: bottom;
+}
+
+thead {
+    background-color: rgb(162, 176, 190);
+}
+
+tbody>tr:nth-of-type(even) {
+    background-color: rgb(237 238 242);
+}
+
+table + * {
+    padding-top: 1rem;
+}
+
+article:nth-child(1) p:nth-child(2){
+    font-weight: 600;
+}
+article:nth-child(2) p:nth-of-type(3) {
+    font-style: italic;
+}

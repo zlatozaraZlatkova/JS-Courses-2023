@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    margin: 0;
+    font: 14px/1.5 "Open Sans", sans-serif;
+}
+
+body,
+input,
+button {
+    font: inherit;
+    font-family: "Lato", sans-serif;
+    background-color: whitesmoke;
+}
+
+body {
+    padding: 2em;
+}
+
+h2 {
+    padding: 1em 0 1em;
+}
+
+
+/* Class buttons */
+.btn {
+    border: 0.5px solid rgb(219, 220, 222);
+    border-radius: 5%;
+    background-color: inherit;
+    padding: 14px 28px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.success {
+    background-color: rgb(247, 250, 183);
+}
+
+.info {
+    background-color: white;
+}
+
+.warning {
+    background-color: orange;
+}
+
+.default,
+.edit {
+    background-color: rgb(176, 172, 172);
+}
+
+/* On mouse-over */
+.btn:hover {
+    background: #454040;
+    color: white;
+}
+
+
+/* Link buttons */
+
+.link-button li {
+    display: inline-block;
+    list-style: none outside;
+
+}
+
+a:link,
+a:visited {
+    color: black;
+    border: 0.5px solid rgb(219, 220, 222);
+    border-radius: 5%;
+    background-color: inherit;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 28px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+/* On mouse-over */
+
+a:hover,
+a:active {
+    background: #454040;
+    color: white;
+}
+
+/* Background color */
+.link-button > ul li:nth-child(1),
+.link-button > ul li:nth-child(5) {
+    background-color: rgb(176, 172, 172);
+}
+
+.link-button > ul li:nth-child(2) {
+    background-color: orange;
+}
+
+.link-button > ul li:nth-child(3) {
+    background-color: rgb(247, 250, 183);
+}
+
+.link-button > ul li:nth-child(4) {
+    background-color: white;
+}

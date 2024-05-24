@@ -1,0 +1,59 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    margin: 0;
+    font: 14px/1.5 "Open Sans", sans-serif;
+}
+
+body,
+input {
+    font: inherit;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    padding: 2em; 
+}
+
+h1 {
+    padding: 10px;
+}
+
+.socials li {
+    display: inline-block;
+    list-style: none outside;
+}
+
+.socials li a {
+    display: block;
+    background-color: whitesmoke;
+    font-size: 2em;
+    width: 5rem;
+    aspect-ratio: 1/1;
+    text-align: center;
+    line-height: 5rem;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+  
+}
+
+.socials li a {
+    color: black;
+}
+
+.socials li a:hover {
+    background-color: darkorange;
+    color:white;
+}

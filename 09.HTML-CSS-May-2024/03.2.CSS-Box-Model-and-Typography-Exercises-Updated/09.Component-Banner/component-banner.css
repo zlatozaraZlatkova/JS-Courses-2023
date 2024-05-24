@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font: 14px/1.5 Arial, Helvetica, sans-serif;
+}
+
+
+.section.banner {
+    min-height: max(30vh, 500px);
+    position: relative;
+    /* overflow: hidden; */
+    margin: 0 auto;
+    background-color: #eee;
+   
+    background-image: url(./images/image1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.section.banner header {
+    color: #fff;
+    font-size: 1.6em;
+    max-width: 30rem;
+    margin: 0 auto;
+    text-align: center;
+    text-shadow: 0 0 1em #000;
+    
+    /* in the middle  */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
