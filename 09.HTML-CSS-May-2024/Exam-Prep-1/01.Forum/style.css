@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font: 12px/1.5 "Inter", sans-serif;
+}
+
+body,
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+h1 {
+  font-size: 2.4em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.8em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 2em;
+
+  background-image: url("./images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.site {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2em;
+}
+
+article {
+  background-color: white;
+  padding: 1em;
+}
+
+article + article {
+  margin-top: 2em;
+}
+
+article p {
+  padding-bottom: 1.5em;
+}
+
+.site > main {
+  flex: 0 0 70%;
+}
+
+.site main > article {
+  align-self: center;
+  flex-grow: 1;
+}
+
+.site > aside {
+  flex: 1 1 auto;
+  display: flex;
+}
+
+.site > main article {
+  display: flex;
+  gap: 2em;
+  padding: 1em;
+}
+
+article .media {
+  flex: 1 0 12em;
+}
+
+.site aside article .media {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  border-top: 1px solid rgb(0, 0, 0, 0.4);
+  padding-top: 1em;
+}
+
+article .content p {
+  max-width: 100ch;
+}
+
+article .media .avatar {
+  height: 80%;
+  min-height: 6em;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: green;
+  border: 0.3em solid whitesmoke;
+  box-shadow: 0 0 1em 0 rgba(141, 138, 138, 0.2);
+  overflow: hidden;
+}
+
+article .avatar img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: green;
+}
+
+.site aside article .avatar {
+  min-height: 4em;
+  max-width: 4em;
+}
+
+/* article .content::before {
+    display: block;
+    content: "\f10d"; 
+    font-size: 4em;
+    line-height: 0.5;
+    padding-top: 0.5em;
+
+}  */

@@ -1,0 +1,265 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|PT+Serif:400,400i,700,700i&amp;display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 " PT Sans", sans-serif;
+}
+
+body,
+input,
+textarea,
+button {
+    font: inherit;
+}
+
+h1 {
+    font-size: 2.4em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.top-navbar ul {
+    display: flex;
+}
+
+.top-navbar li {
+    display: block;
+    list-style: none;
+}
+
+.top-navbar a {
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.flex-columns {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-columns.c2>* {
+    flex: 1 1 45%;
+}
+
+.flex-columns.c3>* {
+    flex: 0 0 30%;
+}
+
+.site-header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+}
+
+.section .wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section .wrapper .site-header-narrow {
+    max-width: 1000px;
+}
+
+.site-banner,
+.site-catalog header,
+.site-services header,
+.site-about-us {
+    text-align: center;
+}
+
+.site-banner .wrapper {
+    padding: 6em 0 4em 0;
+}
+
+.site-banner .wrapper h2 {
+    padding-bottom: 1rem;
+}
+
+.site-banner .wrapper .button {
+    display: inline-block;
+    background: #fff;
+    color: #666;
+    margin-top: 2em;
+    border-radius: 0.3em;
+    padding: 0.8em 1.2em;
+    border: 1px solid #fff;
+}
+
+body {
+    background-image: url("./images/background.jpg");
+    background-position: center -19em;
+    background-size: 1920px auto;
+    background-repeat: no-repeat;
+}
+
+.brand-logo a {
+    display: block;
+    width: 7em;
+    height: 4em;
+    background: url("./images/logo.png") center no-repeat;
+    background-size: contain;
+    text-indent: -100vw;
+    overflow: hidden;
+}
+
+.site-catalog,
+.site-services {
+    background-color: #60acc1;
+}
+
+.site-catalog header {
+    font-size: 1.2em;
+}
+
+.site-catalog .flex-columns.c2 {
+    gap: 9em;
+}
+
+.site-catalog .flex-columns.c2 article {
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 0 1em rgb(0, 0, 0, 0.4);
+}
+
+.site-catalog .flex-columns.c2 article>* {
+    flex: 0 0 50%;
+}
+
+.site-catalog .flex-columns.c2 article h4 {
+    font-size: 1em;
+    text-align: center;
+}
+
+.site-catalog .flex-columns.c2 article .media {
+    overflow: hidden;
+    position: relative;
+    background-color: #60acc1;
+}
+
+.site-catalog .flex-columns.c2 article .media img {
+    position: absolute;
+    height: 100%;
+    width: auto;
+}
+
+.site-catalog .flex-columns.c2 article section {
+    background-color: white;
+    padding: 3em 2em;
+}
+
+.site-services .wrapper,
+.site-catalog .wrapper {
+    padding: 1em 0 2em;
+}
+
+.site-services header,
+.site-catalog header {
+    padding-bottom: 1.5em;
+}
+
+.site-services header h3,
+.site-catalog header {
+    font-size: 1.2em;
+}
+
+.site-services .flex-columns.c3 {
+    gap: 3em;
+}
+
+.site-services .flex-columns.c3 img {
+    box-shadow: 0 0 1em rgb(0, 0, 0, 0.4);
+}
+
+.site-products {
+    background-color: #fff;
+}
+
+.site-products .wrapper {
+    padding: 3em 0;
+}
+
+.site-products .flex-columns.c3 {
+    gap: 2em;
+}
+
+.site-products .flex-columns.c3>* {
+    flex: 1 1 30%;
+    text-align: center;
+}
+
+.site-products .flex-columns.c3 img {
+    height: 5em;
+    width: 5em;
+    margin: 0 auto;
+}
+
+.site-products .flex-columns.c3 h4 {
+    font-size: 1.2em;
+}
+
+.site-about-us .wrapper {
+    padding: 2em 2em;
+    opacity: 0.7;
+}
+
+.site-about-us .wrapper header {
+    padding-bottom: 2em;
+}
+
+.site-about-us .wrapper header h3 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.site-about-us .wrapper header p {
+    font-style: italic;
+}
+
+.site-about-us .wrapper p {
+    max-width: 100ch;
+    margin: 0 auto;
+}
+
+.site-footer {
+    background-color: #2d333c;
+    color: #ddd;
+    text-align: center;
+}
+
+.site-footer .wrapper {
+    padding: 1em 0;
+}
