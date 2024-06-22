@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font: 14px/1.5 Arial, Helvetica, sans-serif;
+}
+
+body {
+  font: inherit;
+  padding: 2em;
+  background-color: #fff;
+}
+
+.site {
+  padding: 2em;
+  background-color: whitesmoke;
+  border-radius: 0.3em;
+  box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.site > * {
+  border: 1px solid #ccc;
+  border-radius: 0.3em;
+  padding: 1em;
+}
+
+
+.site-header,
+.site-footer {
+  flex: 1 0 100%;
+}
+
+.site-content {
+  flex: 1 1 650px;
+}
+
+.site-sidebar {
+  flex: 1 1 250px;
+}
