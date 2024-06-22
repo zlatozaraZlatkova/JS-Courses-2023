@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font: 14px/1.5 "Comfortaa", sans-serif;
+}
+
+body,
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+h1 {
+  font-size: 2.4em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.8em;
+}
+h4 {
+  font-size: 1.4em;
+}
+h5 {
+  font-size: 1.2em;
+}
+h6 {
+  font-size: 1em;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 1.28em;
+  min-height: 100vh;
+}
+
+.site {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-columns {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+.flex-columns.c3 > * {
+  flex: 1 1 33%;
+  box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.4);
+}
+
+.card {
+  padding: 1em;
+  display: block;
+}
+
+.card-banner {
+  min-height: 33vh;
+  position: relative;
+  background-color: #fff;
+
+  background-image: url(./images/media.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.3em;
+}
+
+.card-banner h4 {
+    font-size: 1em;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 1em #000;
+  background-color: #16c79a;
+  opacity: 0.7;
+
+  position: absolute;
+  top: 0;
+  right:0%;
+  left: 33%;
+  padding: 0.2em;
+  border-radius: 0.3em;
+
+}
+
+.card-banner:after{
+
+    /* pseudo-elements multiple content elements*/
+    content: "\f5fc" " David Core";
+
+    font-family: "Font Awesome 6 Free";
+    font-weight: bold;
+
+    background-color: #fff;
+    border-radius: 0.3em;
+    padding: 0.5em 1em 0.5em 1em;
+    text-align: center;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
+
+    position: absolute;
+    font-weight: bold;
+    bottom: -1%;
+    right: 12%;
+    z-index: 1;
+}
+
+.card-banner:before{
+    content:url(./images/avatar.jpg);
+    position:absolute;
+   
+    bottom:-1em;
+    left:85%;
+
+    min-height: 4em;
+    max-width: 4em;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: green;
+    overflow: hidden;
+    border: 2px solid white;
+    z-index: 2;
+    
+}
+
+
+.card:nth-child(2) .card-banner h4 {
+    background-color: purple;
+    
+}
+
+.card:nth-child(3) .card-banner h4 {
+    background-color: orange;
+ 
+   
+}
+
+
+.course-data,
+.course-payment,
+.time-table {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Attribute selector fontawesome icons */
+p [class*="fa-regular"] {
+  padding-right: 0.2em;
+}
+
+.course-payment,
+.content {
+  background-color: #fff;
+  border-radius: 0.3em;
+  box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
+  padding: 1em;
+}
+.course-payment p {
+  color: #16c79a;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Content */
+
+.content {
+  position: relative;
+  margin: -0.5em 1.2em 2em 1.2em;
+}
+
+.content h5 {
+  border-bottom: 1px solid #ccc;
+}
+
+.course-data a {
+  font-weight: bold;
+  color: #16c79a;
+}
+
+
+.time-table {
+  background-color: #eee;
+  border-radius: 0.3em;
+  box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+  padding: 1em;
+}
+
+.time-table + .time-table {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.time-table-start p:not(:first-child) {
+  display: inline-block;
+  padding-right: 0.2em;
+}
+
+.time-table-price {
+  align-self: flex-end;
+}
+
+.time-table-price p:nth-child(1) {
+  display: none;
+}
+
+
+@media(max-width:860px) {
+    .card-banner:before {
+        left: 75%;
+    }
+    .card-banner:after {
+        left: 10%;
+    }
+}
+
+@media(max-width:800px) {
+    .flex-columns {
+        flex-direction: column;
+    }
+  
+} 
+
+@media (max-width: 320px) {
+
+    .card-banner h4 {
+        left: 49%;
+        font-size: 1.1em;
+    }
+
+    .card-banner:before {
+        left: 75%;
+
+    }
+    .card-banner:after {
+        left: 23%;
+    
+        font-size: 0.8em;
+    }
+
+    .content {
+        text-align: center;
+        font-size: 0.9em;
+        
+    }
+    
+}
