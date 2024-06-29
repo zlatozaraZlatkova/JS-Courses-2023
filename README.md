@@ -157,6 +157,28 @@ TypeScript is the most popular language for developing server and front-end appl
 [TypeScript](https://github.com/zlatozaraZlatkova/SoftUni-JS-Courses-2023-2024/tree/main/08.TypeScript-Apr-2024)
 
 </details>
+<details>
+  
+<summary><b>SoftUni HTML & CSS May-2024</b></summary>
+
+###### Description
+
+The purpose of the HTML & CSS course is to lay a foundation of knowledge in web technologies, specifically an introduction to HTML5 and CSS3. The course provides a basic introduction to web development, web browsers, HTML/CSS/DOM development tools, and develops practical skills in using the Web Content Description Language (HTML) and the Web Content Styling Language (CSS). It also covers the latest developments in HTML5 and the CSS3 standard.
+
+The course places a strong emphasis on hands-on exercises with HTML and CSS, which will engage participants in practical real-world scenarios related to web page development. These exercises will require the participants to implement snippets of existing websites and create their own complete modern websites, which should be visually appealing, well structured, and responsive to mobile devices.
+
+###### Skills
+
+- Learn the basics of web design
+- Style websites with CSS
+- Create a responsive website
+- Create a modern website
+- Create static websites.
+
+###### Labs and Exercises
+[HTML & CSS](https://github.com/zlatozaraZlatkova/SoftUni-JS-Courses-2023-2024/tree/main/09.HTML-CSS-May-2024)
+
+</details>
 
 ## Courses and Certificates
 
