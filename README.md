@@ -166,6 +166,10 @@ TypeScript is the most popular language for developing server and front-end appl
     <th>Course</th>
     <th>Certificate</th>
     </tr>
+     <tr>
+     <td>HTML & CSS</td>
+      <td><a href="https://softuni.bg/certificates/details/218526/dff8fc32"><strong>See certificate</strong></a></td>
+  </tr> 
   <tr>
      <td>TypeScript</td>
       <td><a href="https://softuni.bg/certificates/details/215471/40758059"><strong>See certificate</strong></a></td>
